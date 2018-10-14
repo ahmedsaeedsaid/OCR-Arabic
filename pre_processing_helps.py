@@ -1,5 +1,7 @@
 import cv2
 import numpy as np
+import matplotlib.pyplot as plt
+
 
 def rotate_image(image):
     # convert the image to grayscale and flip the foreground

@@ -7,4 +7,8 @@ for page in pages_split :
     for column in columns :
         lines=line_Segmentatin(column)
         for line in lines :
-            word_Segmentatin(line)
+            words=word_Segmentatin(line)
+            for word in words :
+                word_parts=part_Segmentatin(word[0],word[1])
+
+

@@ -27,6 +27,26 @@ def Separation_indices_f(list):
     Separation_indices=[i for i in range(len(list)) if list[i]>0]
     return Separation_indices
 
+def count_spaces_conected(list):
+    count_spaces=[]
+    count=0
+    if list[0]==0 :
+        flag=False
+    else:
+        flag=True
+
+    for value in list :
+        if value==0 and flag:
+            count+=1
+        elif value!=0 and not flag :
+            flag=True
+        elif count!=0:
+            count_spaces.append(count)
+            count=0
+
+
+    return count_spaces
+
 def separated_regions_f(Separation_indices,threshold):
 
     separated_regions=[]
@@ -39,7 +59,7 @@ def separated_regions_f(Separation_indices,threshold):
         elif index==(preavis_index+1):
             preavis_index=index
             count+=1
-        elif count>=threshold:
+        elif (index-preavis_index)>=threshold:
             separated_regions.append((min,preavis_index))
             count=0
             min=index
@@ -78,9 +98,6 @@ def FindMax( listOfY , indexes, numOfMax):
         xList.append(indexes[index])
         listOfY.pop(index)
     return listMax, xList
-
-
-
 
 
 

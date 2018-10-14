@@ -23,9 +23,10 @@ Line Sigmentation
 
 '''
 from sigmentation_helps import *
-threshold_page_sigmentation=20
-threshold_column_sigmentation=180
-threshold_word_sigmentation=1
+import matplotlib.pyplot as plt
+
+
+
 def page_Segmentatin(img):
 
     #vertical projection is applied
@@ -33,6 +34,14 @@ def page_Segmentatin(img):
     # get separation region indices and separated regions
 
     Separation_indices=Separation_indices_f(V_proj)
+
+    # calculate page threshold
+    count_spaces=np.array(count_spaces_conected(V_proj))
+    if len(count_spaces)>0:
+        threshold_page_sigmentation=np.mean(count_spaces)
+    else:
+        threshold_page_sigmentation=1
+
     if(len(Separation_indices)>0):
         separated_regions=separated_regions_f(Separation_indices,threshold_page_sigmentation)
         page_columns=[]
@@ -40,28 +49,39 @@ def page_Segmentatin(img):
             min=separated_regions[i][0]
             max=separated_regions[i][1]
             page_columns.append(img[: , min:max])
-            cv2.imwrite('result_image/page_segmanted'+str(i)+'.jpg',img[: , min:max])
+            #cv2.imwrite('result_image/page_segmanted'+str(i)+'.jpg',img[: , min:max])
 
     else:
         page_columns=[img]
     return page_columns
+
+
+
+
 
 def column_Segmentatin(img):
     #horizontal projection is applied
     H_proj=horizontal_projection(img)
     # get separation region indices and separated regions
     Separation_indices=Separation_indices_f(H_proj)
+
+    # calculate column threshold
+    count_spaces=np.array(count_spaces_conected(H_proj))
+    if len(count_spaces)>0:
+        threshold_column_sigmentation=np.min(count_spaces)*5
+    else:
+        threshold_column_sigmentation=1
     if(len(Separation_indices)>0):
         separated_regions=separated_regions_f(Separation_indices,threshold_column_sigmentation)
         column_splets=[]
         for i in range(len(separated_regions)):
             min=separated_regions[i][0]
             max=separated_regions[i][1]
-            column_splets.append(img[min:max , :])
-
+            column_splets.append(img[min:max+1 , :])
     else:
         column_splets=[img]
     return column_splets
+
 
 
 def height_of_line_Segmentatin(img):
@@ -96,6 +116,9 @@ def height_of_line_Segmentatin(img):
 
 
 
+
+
+
 def line_Segmentatin (img) :
     #img=column_Segmentatin(np.copy(img))[0]
     # get height of one line
@@ -113,9 +136,13 @@ def line_Segmentatin (img) :
     for i in range(number_of_line):
         if img.shape[0]>=height_line+start :
             lines_splets.append(img[start:height_line+start , :])
-            cv2.imwrite('result_image/line_segmanted'+str(i)+'.jpg',img[start:height_line+start , :])
+            #cv2.imwrite('result_image/line_segmanted'+str(i)+'.jpg',img[start:height_line+start , :])
             start+=height_line
     return lines_splets
+
+
+
+
 
 def word_Segmentatin (img) :
 
@@ -144,9 +171,14 @@ def word_Segmentatin (img) :
                 upgrade_image.itemset((i,j),0)
 
     upgrade_image[peaksList[1][0]]=line_change
-    cv2.imwrite('result_image/line_upgrade_segmanted.jpg',upgrade_image)
+
     # get separation region indices and separated regions
     Separation_indices=Separation_indices_f(V_proj)
+
+    # calculate word threshold
+    count_spaces=np.array(count_spaces_conected(V_proj))
+    threshold_word_sigmentation=np.mean(count_spaces)
+
     if(len(Separation_indices)>0):
         separated_regions=separated_regions_f(Separation_indices,threshold_word_sigmentation)
         line_words=[]
@@ -154,9 +186,33 @@ def word_Segmentatin (img) :
         for i in range(len(separated_regions)):
             min=separated_regions[i][0]
             max=separated_regions[i][1]
-            line_words.append((img[: , min:max],upgrade_image[: , min:max]))
-            cv2.imwrite('result_image/word_segmanted'+str(i)+'.jpg',upgrade_image[: , min:max])
+            line_words.append((img[: , min:max+1],upgrade_image[: , min:max+1]))
+            #cv2.imwrite('result_image/word_segmanted'+str(i)+'.jpg',upgrade_image[: , min:max+1])
 
     else:
         line_words=[(img,upgrade_image)]
     return line_words
+
+
+
+
+
+
+
+def part_Segmentatin(img,upgrade_img):
+    #vertical projection is applied
+    V_proj=vertical_projection(img)
+    # get separation region indices and separated regions
+    Separation_indices=Separation_indices_f(V_proj)
+    if(len(Separation_indices)>0):
+        separated_regions=separated_regions_f(Separation_indices,0)
+        word_parts=[]
+        for i in range(len(separated_regions)):
+            min=separated_regions[i][0]
+            max=separated_regions[i][1]
+            word_parts.append((img[: , min:max+1],upgrade_img[: , min:max+1]))
+            #cv2.imwrite('result_image/part_segmanted'+str(i+len(separated_regions)+len(Separation_indices)+min+max)+'.jpg',img[: , min:max+1])
+
+    else:
+        word_parts=[(img,upgrade_img)]
+    return word_parts
