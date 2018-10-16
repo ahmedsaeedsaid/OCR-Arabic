@@ -19,28 +19,24 @@ Each group performs a separation region between the segments
 
 
 Line Sigmentation
-
+word Sigmentation
+part Sigmentation
 
 '''
 from sigmentation_helps import *
 import matplotlib.pyplot as plt
 
 
-
 def page_Segmentatin(img):
 
     #vertical projection is applied
     V_proj=vertical_projection(img)
-    # get separation region indices and separated regions
 
+    # get separation region indices and separated regions
     Separation_indices=Separation_indices_f(V_proj)
 
-    # calculate page threshold
-    count_spaces=np.array(count_spaces_conected(V_proj))
-    if len(count_spaces)>0:
-        threshold_page_sigmentation=np.mean(count_spaces)
-    else:
-        threshold_page_sigmentation=1
+    # calculate page sigmentation
+    threshold_page_sigmentation=50
 
     if(len(Separation_indices)>0):
         separated_regions=separated_regions_f(Separation_indices,threshold_page_sigmentation)
@@ -56,10 +52,8 @@ def page_Segmentatin(img):
     return page_columns
 
 
-
-
-
 def column_Segmentatin(img):
+
     #horizontal projection is applied
     H_proj=horizontal_projection(img)
     # get separation region indices and separated regions
@@ -67,31 +61,28 @@ def column_Segmentatin(img):
 
     # calculate column threshold
     count_spaces=np.array(count_spaces_conected(H_proj))
-    if len(count_spaces)>0:
-        threshold_column_sigmentation=np.min(count_spaces)*5
-    else:
-        threshold_column_sigmentation=1
-    if(len(Separation_indices)>0):
+    if len(Separation_indices) >0:
+        if len(count_spaces) >0:
+            threshold_column_sigmentation=round(float(np.mean(count_spaces)))
+        else :
+            threshold_column_sigmentation=1
         separated_regions=separated_regions_f(Separation_indices,threshold_column_sigmentation)
         column_splets=[]
         for i in range(len(separated_regions)):
             min=separated_regions[i][0]
             max=separated_regions[i][1]
             column_splets.append(img[min:max+1 , :])
+            #cv2.imwrite('result_image/line_segmanted'+str(i)+'.jpg',img[min:max+1,:])
     else:
         column_splets=[img]
     return column_splets
 
 
-
 def height_of_line_Segmentatin(img):
+
     # horizontal projection is applied
     H_proj=horizontal_projection(img)
     peaksList = FindPeaks(H_proj) #List: (['peaks'],['indexes'])
-    # plot peeks in image
-
-    #plt.plot(peaksList[0])
-    #plt.show()
 
     # get max peak and draw white line in max peak
     peaksList = FindMax(peaksList[0],peaksList[1],1)
@@ -108,6 +99,7 @@ def height_of_line_Segmentatin(img):
                 img.itemset((i,j),255)
             else:
                 img.itemset((i,j),0)
+
     line_image=column_Segmentatin(img)[0]
 
     # get height of line
@@ -115,43 +107,38 @@ def height_of_line_Segmentatin(img):
     return height_line
 
 
-
-
-
-
 def line_Segmentatin (img) :
-    #img=column_Segmentatin(np.copy(img))[0]
+
     # get height of one line
     height_line=height_of_line_Segmentatin(np.copy(img))
-    # calculate space between lines
-    error=int((height_line*20)/100)
+
     # calculate numbers of lines
-    number_of_line=int(img.shape[0]/(height_line+error))
-    if number_of_line==0:
+    number_of_line = int(img.shape[0]/height_line)
+    height_line = int(img.shape[0]/number_of_line)
+
+    if number_of_line == 0 or number_of_line == 1 :
         return [img]
-    height_line=int(img.shape[0]/number_of_line)
+
     # split image to lines
-    lines_splets=[]
-    start=0
+    lines_splets = []
+    start = 0
     for i in range(number_of_line):
         if img.shape[0]>=height_line+start :
             lines_splets.append(img[start:height_line+start , :])
-            #cv2.imwrite('result_image/line_segmanted'+str(i)+'.jpg',img[start:height_line+start , :])
+            cv2.imwrite('result_image/line_segmanted'+str(i)+'.jpg',img[start:height_line+start , :])
             start+=height_line
     return lines_splets
 
 
-
-
-
 def word_Segmentatin (img) :
 
-    #vertical projection is applied
+    # vertical projection is applied
     V_proj=vertical_projection(img)
 
     # horizontal projection is applied
     H_proj=horizontal_projection(img)
     peaksList = FindPeaks(H_proj)
+
     # get max peak and draw white line in max peak
     peaksList = FindMax(peaksList[0],peaksList[1],1)
     upgrade_image=np.copy(img)
@@ -177,35 +164,30 @@ def word_Segmentatin (img) :
 
     # calculate word threshold
     count_spaces=np.array(count_spaces_conected(V_proj))
-    threshold_word_sigmentation=np.mean(count_spaces)
+    threshold_word_sigmentation=round(float(np.mean(count_spaces)))
 
+    # split image to words
     if(len(Separation_indices)>0):
         separated_regions=separated_regions_f(Separation_indices,threshold_word_sigmentation)
         line_words=[]
-
         for i in range(len(separated_regions)):
             min=separated_regions[i][0]
             max=separated_regions[i][1]
             line_words.append((img[: , min:max+1],upgrade_image[: , min:max+1]))
-            #cv2.imwrite('result_image/word_segmanted'+str(i)+'.jpg',upgrade_image[: , min:max+1])
-
+            #cv2.imwrite('result_image/word_segmanted'+str(i)+'.jpg',img[: , min:max+1])
     else:
         line_words=[(img,upgrade_image)]
     return line_words
-
-
-
-
-
 
 
 def part_Segmentatin(img,upgrade_img):
     #vertical projection is applied
     V_proj=vertical_projection(img)
     # get separation region indices and separated regions
+
     Separation_indices=Separation_indices_f(V_proj)
     if(len(Separation_indices)>0):
-        separated_regions=separated_regions_f(Separation_indices,0)
+        separated_regions=separated_regions_f(Separation_indices,1)
         word_parts=[]
         for i in range(len(separated_regions)):
             min=separated_regions[i][0]

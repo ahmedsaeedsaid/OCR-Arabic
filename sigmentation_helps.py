@@ -59,7 +59,7 @@ def separated_regions_f(Separation_indices,threshold):
         elif index==(preavis_index+1):
             preavis_index=index
             count+=1
-        elif (index-preavis_index)>=threshold:
+        elif (index-preavis_index)>threshold:
             separated_regions.append((min,preavis_index))
             count=0
             min=index
