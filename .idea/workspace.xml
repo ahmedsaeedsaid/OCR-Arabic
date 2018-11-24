@@ -2,11 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2818c6e4-6020-4f8a-9f29-e2ebb6c695fd" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/test.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/OCR Arabic.iml" afterPath="$PROJECT_DIR$/.idea/OCR Arabic.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change beforePath="$PROJECT_DIR$/pre_processing.py" afterPath="$PROJECT_DIR$/pre_processing.py" />
+      <change beforePath="$PROJECT_DIR$/pre_processing_helps.py" afterPath="$PROJECT_DIR$/pre_processing_helps.py" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted114.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted126.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted132.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted134.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted175.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted177.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted22.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted46.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted58.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted66.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted68.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted69.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted75.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted78.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted79.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted84.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted90.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/part_segmanted92.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/word_segmanted0.jpg" afterPath="$PROJECT_DIR$/result_image/word_segmanted0.jpg" />
+      <change beforePath="$PROJECT_DIR$/result_image/word_segmanted1.jpg" afterPath="$PROJECT_DIR$/result_image/word_segmanted1.jpg" />
+      <change beforePath="$PROJECT_DIR$/result_image/word_segmanted10.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/word_segmanted11.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/word_segmanted2.jpg" afterPath="$PROJECT_DIR$/result_image/word_segmanted2.jpg" />
+      <change beforePath="$PROJECT_DIR$/result_image/word_segmanted3.jpg" afterPath="$PROJECT_DIR$/result_image/word_segmanted3.jpg" />
+      <change beforePath="$PROJECT_DIR$/result_image/word_segmanted4.jpg" afterPath="$PROJECT_DIR$/result_image/word_segmanted4.jpg" />
+      <change beforePath="$PROJECT_DIR$/result_image/word_segmanted5.jpg" afterPath="$PROJECT_DIR$/result_image/word_segmanted5.jpg" />
+      <change beforePath="$PROJECT_DIR$/result_image/word_segmanted6.jpg" afterPath="$PROJECT_DIR$/result_image/word_segmanted6.jpg" />
+      <change beforePath="$PROJECT_DIR$/result_image/word_segmanted7.jpg" afterPath="$PROJECT_DIR$/result_image/word_segmanted7.jpg" />
+      <change beforePath="$PROJECT_DIR$/result_image/word_segmanted8.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/result_image/word_segmanted9.jpg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/sigmentation.py" afterPath="$PROJECT_DIR$/sigmentation.py" />
       <change beforePath="$PROJECT_DIR$/sigmentation_helps.py" afterPath="$PROJECT_DIR$/sigmentation_helps.py" />
+      <change beforePath="$PROJECT_DIR$/test_image/43389291_298682687399861_1095395275284938752_n.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test_image/test_rotate.jpg" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,33 +54,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pre_processing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pre_processing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pre_processing_helps.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pre_processing_helps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,26 +67,50 @@
       <file leaf-file-name="sigmentation_helps.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="61" column="35" lean-forward="false" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+            <state relative-caret-position="323">
+              <caret line="121" column="1" lean-forward="false" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
+              <folding>
+                <element signature="e#65#292#0" expanded="false" />
+                <element signature="e#330#558#0" expanded="false" />
+                <element signature="e#596#687#0" expanded="false" />
+                <element signature="e#727#1062#0" expanded="false" />
+                <element signature="e#1124#1735#0" expanded="false" />
+                <element signature="e#1763#2176#0" expanded="false" />
+                <element signature="e#2225#2546#0" expanded="false" />
+                <element signature="e#2586#3472#0" expanded="false" />
+                <element signature="e#3505#4142#0" expanded="false" />
+                <element signature="e#4188#6143#0" expanded="false" />
+                <element signature="e#6169#6686#0" expanded="false" />
+                <element signature="e#6742#7037#0" expanded="false" />
+                <element signature="e#7070#8271#0" expanded="false" />
+                <element signature="e#8300#8615#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pre_processing.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pre_processing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sigmentation.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sigmentation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sigmentation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="420">
+              <caret line="132" column="42" lean-forward="false" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
               <folding>
-                <element signature="e#804#836#0" expanded="true" />
-                <element signature="e#903#1632#0" expanded="false" />
-                <element signature="e#1669#2598#0" expanded="false" />
-                <element signature="e#2643#3440#0" expanded="false" />
-                <element signature="e#3477#4136#0" expanded="false" />
-                <element signature="e#4173#5880#0" expanded="false" />
-                <element signature="e#5926#6652#0" expanded="false" />
+                <element signature="e#814#1547#0" expanded="false" />
+                <element signature="e#1582#2513#0" expanded="false" />
+                <element signature="e#2557#2719#0" expanded="false" />
+                <element signature="e#2755#3415#0" expanded="false" />
+                <element signature="e#3479#4509#0" expanded="false" />
+                <element signature="e#4558#7243#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -88,10 +127,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Separation_indices_f</find>
       <find>im</find>
       <find>col</find>
       <find>column</find>
+      <find>pytesseract</find>
+      <find>Separation_indices_f</find>
+      <find>calculate_threshold_word_sigmentation</find>
       <find>print</find>
     </findStrings>
   </component>
@@ -104,11 +145,12 @@
         <option value="$PROJECT_DIR$/pre-processing.py" />
         <option value="$PROJECT_DIR$/detect_peaks.py" />
         <option value="$PROJECT_DIR$/black_white.py" />
+        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/pre_processing_helps.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/sigmentation_helps.py" />
-        <option value="$PROJECT_DIR$/pre_processing.py" />
         <option value="$PROJECT_DIR$/sigmentation.py" />
+        <option value="$PROJECT_DIR$/sigmentation_helps.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/pre_processing.py" />
       </list>
     </option>
   </component>
@@ -133,6 +175,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,11 +187,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/text-skew-correction" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -164,24 +206,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="black_white" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="OCR Arabic" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/black_white.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -218,6 +242,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="pre_processing_helps" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OCR Arabic" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pre_processing_helps.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="sigmentation (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -236,7 +278,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="sigmentation_helps" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -248,26 +290,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="OCR Arabic" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sigmentation_helps.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.black_white" />
-      <item index="1" class="java.lang.String" itemvalue="Python.sigmentation (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pre_processing" />
-      <item index="3" class="java.lang.String" itemvalue="Python.sigmentation_helps" />
-      <item index="4" class="java.lang.String" itemvalue="Python.main" />
+      <item index="0" class="java.lang.String" itemvalue="Python.sigmentation (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pre_processing" />
+      <item index="2" class="java.lang.String" itemvalue="Python.main" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pre_processing_helps" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.main" />
         <item index="1" class="java.lang.String" itemvalue="Python.pre_processing" />
         <item index="2" class="java.lang.String" itemvalue="Python.sigmentation (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.sigmentation_helps" />
-        <item index="4" class="java.lang.String" itemvalue="Python.black_white" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pre_processing_helps" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +323,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24479167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23809524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25084746" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -304,7 +346,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25084746" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24479167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -318,289 +360,29 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pre_processing.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pre_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_processing_helps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1037">
+          <caret line="61" column="35" lean-forward="false" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sigmentation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3400">
-          <caret line="201" column="9" lean-forward="false" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="20" />
+        <state relative-caret-position="3451">
+          <caret line="203" column="12" lean-forward="false" selection-start-line="203" selection-start-column="12" selection-end-line="203" selection-end-column="12" />
           <folding>
-            <element signature="e#804#836#0" expanded="true" />
-            <element signature="e#903#1632#0" expanded="false" />
-            <element signature="e#1669#2598#0" expanded="false" />
-            <element signature="e#2643#3440#0" expanded="false" />
-            <element signature="e#3477#4136#0" expanded="false" />
-            <element signature="e#4173#5880#0" expanded="false" />
-            <element signature="e#5926#6652#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_processing_helps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sigmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2482">
-          <caret line="146" column="4" lean-forward="false" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
-          <folding>
-            <element signature="e#804#836#0" expanded="true" />
-            <element signature="e#903#1632#0" expanded="false" />
-            <element signature="e#1669#2598#0" expanded="false" />
-            <element signature="e#2643#3440#0" expanded="false" />
-            <element signature="e#3477#4136#0" expanded="false" />
-            <element signature="e#4173#5880#0" expanded="false" />
-            <element signature="e#5926#6652#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_processing_helps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sigmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="105" column="4" lean-forward="false" selection-start-line="105" selection-start-column="4" selection-end-line="106" selection-end-column="20" />
-          <folding>
-            <element signature="e#804#836#0" expanded="true" />
-            <element signature="e#903#1632#0" expanded="false" />
-            <element signature="e#1669#2598#0" expanded="false" />
-            <element signature="e#2643#3440#0" expanded="false" />
-            <element signature="e#3477#4136#0" expanded="false" />
-            <element signature="e#4173#5880#0" expanded="false" />
-            <element signature="e#5926#6652#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sigmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding>
-            <element signature="e#804#836#0" expanded="true" />
-            <element signature="e#903#1632#0" expanded="false" />
-            <element signature="e#1669#2598#0" expanded="false" />
-            <element signature="e#2643#3440#0" expanded="false" />
-            <element signature="e#3477#4136#0" expanded="false" />
-            <element signature="e#4173#5880#0" expanded="false" />
-            <element signature="e#5926#6652#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/black_white.py" />
-    <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Anaconda3/Lib/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="6" lean-forward="false" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sigmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="108" column="12" lean-forward="false" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
-          <folding>
-            <element signature="e#804#836#0" expanded="true" />
-            <element signature="e#903#1632#0" expanded="false" />
-            <element signature="e#1669#2598#0" expanded="false" />
-            <element signature="e#2643#3440#0" expanded="false" />
-            <element signature="e#3477#4136#0" expanded="false" />
-            <element signature="e#4173#5880#0" expanded="false" />
-            <element signature="e#5926#6652#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/black_white.py" />
-    <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sigmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <element signature="e#804#836#0" expanded="true" />
-            <element signature="e#903#1632#0" expanded="false" />
-            <element signature="e#1669#2598#0" expanded="false" />
-            <element signature="e#2643#3440#0" expanded="false" />
-            <element signature="e#3477#4136#0" expanded="false" />
-            <element signature="e#4173#5880#0" expanded="false" />
-            <element signature="e#5926#6652#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Anaconda3/Lib/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="6" lean-forward="false" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Anaconda3/Lib/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="59" column="6" lean-forward="false" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/detect_peaks.py" />
-    <entry file="file://$PROJECT_DIR$/black_white.py" />
-    <entry file="file://$PROJECT_DIR$/test.jpg" />
-    <entry file="file://$PROJECT_DIR$/line_segmanted0.jpg" />
-    <entry file="file://$PROJECT_DIR$/pre_processing_helps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#814#1547#0" expanded="false" />
+            <element signature="e#1582#2513#0" expanded="false" />
+            <element signature="e#2557#2719#0" expanded="false" />
+            <element signature="e#2755#3415#0" expanded="false" />
+            <element signature="e#3479#4509#0" expanded="false" />
+            <element signature="e#4558#7243#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -623,25 +405,376 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="1037">
           <caret line="61" column="35" lean-forward="false" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sigmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3315">
+          <caret line="195" column="12" lean-forward="false" selection-start-line="195" selection-start-column="12" selection-end-line="195" selection-end-column="12" />
+          <folding>
+            <element signature="e#814#1547#0" expanded="false" />
+            <element signature="e#1582#2513#0" expanded="false" />
+            <element signature="e#2557#2719#0" expanded="false" />
+            <element signature="e#2755#3415#0" expanded="false" />
+            <element signature="e#3479#4509#0" expanded="false" />
+            <element signature="e#4558#7243#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="35" lean-forward="false" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sigmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="129" column="23" lean-forward="false" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="23" />
+          <folding>
+            <element signature="e#814#1547#0" expanded="false" />
+            <element signature="e#1582#2513#0" expanded="false" />
+            <element signature="e#2557#2719#0" expanded="false" />
+            <element signature="e#2755#3415#0" expanded="false" />
+            <element signature="e#3479#4509#0" expanded="false" />
+            <element signature="e#4558#7243#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sigmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3400">
+          <caret line="201" column="9" lean-forward="false" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="20" />
+          <folding>
+            <element signature="e#814#1547#0" expanded="false" />
+            <element signature="e#1582#2513#0" expanded="false" />
+            <element signature="e#2557#2719#0" expanded="false" />
+            <element signature="e#2755#3415#0" expanded="false" />
+            <element signature="e#3479#4509#0" expanded="false" />
+            <element signature="e#4558#7243#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sigmentation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        <state relative-caret-position="2482">
+          <caret line="146" column="4" lean-forward="false" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
           <folding>
-            <element signature="e#804#836#0" expanded="true" />
-            <element signature="e#903#1632#0" expanded="false" />
-            <element signature="e#1669#2598#0" expanded="false" />
-            <element signature="e#2643#3440#0" expanded="false" />
-            <element signature="e#3477#4136#0" expanded="false" />
-            <element signature="e#4173#5880#0" expanded="false" />
-            <element signature="e#5926#6652#0" expanded="false" />
+            <element signature="e#814#1547#0" expanded="false" />
+            <element signature="e#1582#2513#0" expanded="false" />
+            <element signature="e#2557#2719#0" expanded="false" />
+            <element signature="e#2755#3415#0" expanded="false" />
+            <element signature="e#3479#4509#0" expanded="false" />
+            <element signature="e#4558#7243#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sigmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="105" column="4" lean-forward="false" selection-start-line="105" selection-start-column="4" selection-end-line="106" selection-end-column="20" />
+          <folding>
+            <element signature="e#814#1547#0" expanded="false" />
+            <element signature="e#1582#2513#0" expanded="false" />
+            <element signature="e#2557#2719#0" expanded="false" />
+            <element signature="e#2755#3415#0" expanded="false" />
+            <element signature="e#3479#4509#0" expanded="false" />
+            <element signature="e#4558#7243#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sigmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding>
+            <element signature="e#814#1547#0" expanded="false" />
+            <element signature="e#1582#2513#0" expanded="false" />
+            <element signature="e#2557#2719#0" expanded="false" />
+            <element signature="e#2755#3415#0" expanded="false" />
+            <element signature="e#3479#4509#0" expanded="false" />
+            <element signature="e#4558#7243#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/black_white.py" />
+    <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Anaconda3/Lib/site-packages/PIL/Image.py" />
+    <entry file="file://$PROJECT_DIR$/sigmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="108" column="12" lean-forward="false" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
+          <folding>
+            <element signature="e#814#1547#0" expanded="false" />
+            <element signature="e#1582#2513#0" expanded="false" />
+            <element signature="e#2557#2719#0" expanded="false" />
+            <element signature="e#2755#3415#0" expanded="false" />
+            <element signature="e#3479#4509#0" expanded="false" />
+            <element signature="e#4558#7243#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/black_white.py" />
+    <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sigmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding>
+            <element signature="e#814#1547#0" expanded="false" />
+            <element signature="e#1582#2513#0" expanded="false" />
+            <element signature="e#2557#2719#0" expanded="false" />
+            <element signature="e#2755#3415#0" expanded="false" />
+            <element signature="e#3479#4509#0" expanded="false" />
+            <element signature="e#4558#7243#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Anaconda3/Lib/site-packages/PIL/Image.py" />
+    <entry file="file://C:/Anaconda3/Lib/site-packages/PIL/Image.py" />
+    <entry file="file://$PROJECT_DIR$/detect_peaks.py" />
+    <entry file="file://$PROJECT_DIR$/black_white.py" />
+    <entry file="file://$PROJECT_DIR$/test.jpg" />
+    <entry file="file://$PROJECT_DIR$/line_segmanted0.jpg" />
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Anaconda3/Lib/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="2956" column="0" lean-forward="false" selection-start-line="2956" selection-start-column="0" selection-end-line="2956" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sigmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="132" column="42" lean-forward="false" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
+          <folding>
+            <element signature="e#814#1547#0" expanded="false" />
+            <element signature="e#1582#2513#0" expanded="false" />
+            <element signature="e#2557#2719#0" expanded="false" />
+            <element signature="e#2755#3415#0" expanded="false" />
+            <element signature="e#3479#4509#0" expanded="false" />
+            <element signature="e#4558#7243#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sigmentation_helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="121" column="1" lean-forward="false" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
+          <folding>
+            <element signature="e#65#292#0" expanded="false" />
+            <element signature="e#330#558#0" expanded="false" />
+            <element signature="e#596#687#0" expanded="false" />
+            <element signature="e#727#1062#0" expanded="false" />
+            <element signature="e#1124#1735#0" expanded="false" />
+            <element signature="e#1763#2176#0" expanded="false" />
+            <element signature="e#2225#2546#0" expanded="false" />
+            <element signature="e#2586#3472#0" expanded="false" />
+            <element signature="e#3505#4142#0" expanded="false" />
+            <element signature="e#4188#6143#0" expanded="false" />
+            <element signature="e#6169#6686#0" expanded="false" />
+            <element signature="e#6742#7037#0" expanded="false" />
+            <element signature="e#7070#8271#0" expanded="false" />
+            <element signature="e#8300#8615#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>

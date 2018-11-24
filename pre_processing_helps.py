@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 def rotate_image(image):
     # convert the image to grayscale and flip the foreground
 	# and background to ensure foreground is now "white" and
@@ -40,4 +39,25 @@ def rotate_image(image):
 	return cv2.warpAffine(image, M, (w, h),
 		flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
 
+def remove_borders(cleaned_image,cleaned_image_inv):
+	edges = cv2.Canny(cleaned_image_inv,50,150,apertureSize = 3)
+	minLineLength = 100
+	maxLineGap = 10
+	lines = cv2.HoughLinesP(edges,1,np.pi/180,10,minLineLength,maxLineGap)
+	if lines is None:
+		return cleaned_image
+	for line in lines:
+		x1,y1,x2,y2 =line[0]
+		cv2.line(cleaned_image,(x1,y1),(x2,y2),(0,0,0),2)
+		cv2.line(cleaned_image_inv,(x1,y1),(x2,y2),(255,255,255),2)
+
+	return  cleaned_image
+
+def remove_watermark(img):
+	alpha = 2.0
+	beta = -160
+
+	new = alpha * img + beta
+	new = np.clip(new, 0, 255).astype(np.uint8)
+	return new
 

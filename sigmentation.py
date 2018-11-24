@@ -17,15 +17,8 @@ Horizontal projection is applied to the column image
 continuous indices where the projection equals to zero is determined and grouped
 Each group performs a separation region between the segments
 
-
-Line Sigmentation
-word Sigmentation
-part Sigmentation
-
 '''
 from sigmentation_helps import *
-import matplotlib.pyplot as plt
-
 
 def page_Segmentatin(img):
 
@@ -44,23 +37,21 @@ def page_Segmentatin(img):
         for i in range(len(separated_regions)):
             min=separated_regions[i][0]
             max=separated_regions[i][1]
-            page_columns.append(img[: , min:max])
-            #cv2.imwrite('result_image/page_segmanted'+str(i)+'.jpg',img[: , min:max])
+            page_columns.append(img[: , min:max+2])
+            #cv2.imwrite('result_image/page_segmanted'+str(i)+'.jpg',img[: , min:max+2])
 
     else:
         page_columns=[img]
     return page_columns
 
-
 def column_Segmentatin(img):
-
     #horizontal projection is applied
     H_proj=horizontal_projection(img)
     # get separation region indices and separated regions
     Separation_indices=Separation_indices_f(H_proj)
 
     # calculate column threshold
-    count_spaces=np.array(count_spaces_conected(H_proj))
+    count_spaces=np.array(count_spaces_connected(H_proj))
     if len(Separation_indices) >0:
         if len(count_spaces) >0:
             threshold_column_sigmentation=round(float(np.mean(count_spaces)))
@@ -71,41 +62,21 @@ def column_Segmentatin(img):
         for i in range(len(separated_regions)):
             min=separated_regions[i][0]
             max=separated_regions[i][1]
-            column_splets.append(img[min:max+1 , :])
-            #cv2.imwrite('result_image/line_segmanted'+str(i)+'.jpg',img[min:max+1,:])
+            column_splets.append(img[min:max+2 , :])
+            cv2.imwrite('result_image/column_segmanted'+str(i)+'.jpg',img[min:max+2,:])
     else:
         column_splets=[img]
     return column_splets
 
-
 def height_of_line_Segmentatin(img):
 
-    # horizontal projection is applied
-    H_proj=horizontal_projection(img)
-    peaksList = FindPeaks(H_proj) #List: (['peaks'],['indexes'])
-
-    # get max peak and draw white line in max peak
-    peaksList = FindMax(peaksList[0],peaksList[1],1)
-    img[peaksList[1][0],:]=255
-
-    # get connected components
-    ret, labels = cv2.connectedComponents(img,connectivity=8)
-
-    # get line with maximum peaks
-    label_of_line=labels[peaksList[1][0],0]
-    for i in np.arange(img.shape[0]):
-        for j in np.arange(img.shape[1]):
-            if(labels.item(i,j)==label_of_line):
-                img.itemset((i,j),255)
-            else:
-                img.itemset((i,j),0)
+    img = Clear_increases_in_line(img)
 
     line_image=column_Segmentatin(img)[0]
 
     # get height of line
     height_line=line_image.shape[0]
     return height_line
-
 
 def line_Segmentatin (img) :
 
@@ -125,76 +96,104 @@ def line_Segmentatin (img) :
     for i in range(number_of_line):
         if img.shape[0]>=height_line+start :
             lines_splets.append(img[start:height_line+start , :])
-            cv2.imwrite('result_image/line_segmanted'+str(i)+'.jpg',img[start:height_line+start , :])
+            #cv2.imwrite('result_image/line_segmanted'+str(i)+'.jpg',img[start:height_line+start , :])
             start+=height_line
     return lines_splets
 
+def word_Segmentatin (img,threshold_word_sigmentation) :
 
-def word_Segmentatin (img) :
+    #remove under line from image
+    img = remove_underline(img)
+    cv2.imwrite('result_image/test.jpg',img)
+    # clear increases in line
+    upgrade_image = Clear_increases_in_line(img)
+
+
 
     # vertical projection is applied
-    V_proj=vertical_projection(img)
-
-    # horizontal projection is applied
-    H_proj=horizontal_projection(img)
-    peaksList = FindPeaks(H_proj)
-
-    # get max peak and draw white line in max peak
-    peaksList = FindMax(peaksList[0],peaksList[1],1)
-    upgrade_image=np.copy(img)
-    line_change=np.copy(upgrade_image[peaksList[1][0],:])
-    upgrade_image[peaksList[1][0],:]=255
-
-    # get connected components
-    ret, labels = cv2.connectedComponents(upgrade_image,connectivity=8)
-
-    # get line with maximum peaks
-    label_of_line=labels[peaksList[1][0],0]
-    for i in np.arange(img.shape[0]):
-        for j in np.arange(img.shape[1]):
-            if(labels.item(i,j)==label_of_line):
-                upgrade_image.itemset((i,j),255)
-            else:
-                upgrade_image.itemset((i,j),0)
-
-    upgrade_image[peaksList[1][0]]=line_change
+    V_proj=vertical_projection(upgrade_image)
 
     # get separation region indices and separated regions
     Separation_indices=Separation_indices_f(V_proj)
 
-    # calculate word threshold
-    count_spaces=np.array(count_spaces_conected(V_proj))
-    threshold_word_sigmentation=round(float(np.mean(count_spaces)))
-
     # split image to words
     if(len(Separation_indices)>0):
+        #threshold_word_sigmentation=round(pen_size(upgrade_image,Separation_indices)+2)
         separated_regions=separated_regions_f(Separation_indices,threshold_word_sigmentation)
         line_words=[]
         for i in range(len(separated_regions)):
             min=separated_regions[i][0]
             max=separated_regions[i][1]
-            line_words.append((img[: , min:max+1],upgrade_image[: , min:max+1]))
-            #cv2.imwrite('result_image/word_segmanted'+str(i)+'.jpg',img[: , min:max+1])
+            cv2.imwrite('result_image/word_segmanted'+str(i)+'.jpg',upgrade_image[: , min:max+2])
+            line_words.append((img[: , min:max+2],upgrade_image[: , min:max+2]))
     else:
         line_words=[(img,upgrade_image)]
     return line_words
 
+def sub_word_Segmentatin(img,upgrade_img):
+    number_of_sub_words, labels = cv2.connectedComponents(upgrade_img,connectivity=8)
+    diacritics_img=np.copy(img)
+    parts=[]
+    parts_dir=[]
+    sub_words=[]
 
-def part_Segmentatin(img,upgrade_img):
-    #vertical projection is applied
-    V_proj=vertical_projection(img)
-    # get separation region indices and separated regions
+    # create empty image to save sub-word without director and doted
+    for i in range(1,number_of_sub_words):
+        parts.append(np.zeros(upgrade_img.shape))
 
-    Separation_indices=Separation_indices_f(V_proj)
-    if(len(Separation_indices)>0):
-        separated_regions=separated_regions_f(Separation_indices,1)
-        word_parts=[]
-        for i in range(len(separated_regions)):
-            min=separated_regions[i][0]
-            max=separated_regions[i][1]
-            word_parts.append((img[: , min:max+1],upgrade_img[: , min:max+1]))
-            #cv2.imwrite('result_image/part_segmanted'+str(i+len(separated_regions)+len(Separation_indices)+min+max)+'.jpg',img[: , min:max+1])
+    # seperate sub-word in var 'parts' without director and doted and create diacritics image
+    for i in np.arange(labels.shape[0]):
+        for j in np.arange(labels.shape[1]):
+            if diacritics_img.item(i,j)==upgrade_img.item(i,j):
+                diacritics_img[i][j]=0
+            for k in range(1,number_of_sub_words):
+                if labels.item(i,j)==k:
+                    parts[k-1][i][j]=255
 
-    else:
-        word_parts=[(img,upgrade_img)]
-    return word_parts
+    # create image to save sub-word with director and doted
+    for k in range(1,number_of_sub_words):
+        parts_dir.append(np.copy(parts[k-1]))
+
+
+    # calculate rate for each diacritic
+    number_of_diacritic, labels_of_diacritics = cv2.connectedComponents(diacritics_img,connectivity=8)
+    V_proj_sub_words=[]
+    diacrtics=[]
+    for part in parts:
+        V_proj_sub_words.append(vertical_projection(part))
+
+    for i in range(1,number_of_diacritic):
+        diacrtics.append([])
+        for j in range(len(parts)):
+            diacrtics[i-1].append(0)
+
+    for i in np.arange(labels_of_diacritics.shape[0]):
+        for j in np.arange(labels_of_diacritics.shape[1]):
+            if labels_of_diacritics.item(i,j)!=0:
+                for k in range(len(V_proj_sub_words)):
+                    if V_proj_sub_words[k][j]!=0:
+                        diacrtics[labels_of_diacritics.item(i,j)-1][k]+=1
+
+    # get part of maximum rate
+    for i in range(len(diacrtics)):
+        diacrtics[i]=diacrtics[i].index(max(diacrtics[i]))
+
+    # add diacritics to parts
+    for i in np.arange(labels_of_diacritics.shape[0]):
+        for j in np.arange(labels_of_diacritics.shape[1]):
+            if labels_of_diacritics.item(i,j)!=0:
+                parts_dir[diacrtics[labels_of_diacritics.item(i,j)-1]][i][j]=255
+
+
+
+    # seperate sub-word in var 'parts_dir' with director and doted
+    for i in range(1,number_of_sub_words):
+        V_proj=vertical_projection(parts_dir[i-1])
+        Separation_indices=Separation_indices_f(V_proj)
+        if(len(Separation_indices)>0):
+            separated_regions=separated_regions_f(Separation_indices,1)
+            sub_words.append((parts_dir[i-1][:,separated_regions[0][0]:separated_regions[0][1]+2],parts[i-1][:,separated_regions[0][0]:separated_regions[0][1]+2]))
+
+    #for i in range(1,number_of_sub_words):
+        #cv2.imwrite('result_image/part'+str(i)+'.jpg',sub_words[i-1][0])
+    return sub_words
