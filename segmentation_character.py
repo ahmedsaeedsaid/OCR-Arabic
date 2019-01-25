@@ -390,6 +390,32 @@ def check_dotted(img):
         else:
             return 0
 
+def check_hamza(char,upgrade_char):
+    diacritics_image,found=filtering_diacritics(char,upgrade_char)
+    if not found:
+        return False
+    diacritics_image = np.uint8(diacritics_image)
+    number_of_diacritic, labels_of_diacritics = cv2.connectedComponents(diacritics_image,connectivity=8)
+    if number_of_diacritic != 2:
+        return False
+
+    component=filtering_component(diacritics_image,labels_of_diacritics,1)
+    img=determination_image(component)
+    shape_area=0
+    for i in np.arange(img.shape[0]):
+        for j in np.arange(img.shape[1]):
+            if img.item(i,j)==255:
+                shape_area+=1
+    try:
+        im2, contours, hierarchy = cv2.findContours(np.copy(img),cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+        cnt = contours[0]
+        convex_hull_area=cv2.contourArea(cnt)
+        if shape_area/convex_hull_area>0.5:
+            return True
+    except:
+        return False
+    return False
+
 def calculate_part_height(upgrade_char,x1,x2,index,baseline):
     if index==0 :
         base = x2
@@ -401,7 +427,6 @@ def calculate_part_height(upgrade_char,x1,x2,index,baseline):
             if upgrade_char.item(i,j) == 255:
                 test_image[baseline,:]=255
                 test_image[i,:]=255
-                cv2.imwrite('test_image.jpg',test_image)
                 return baseline-i
 
 def get_number_of_dotted(char,upgrade_char):
@@ -424,9 +449,10 @@ def get_number_of_dotted(char,upgrade_char):
 def character_satisfied(char,upgrade_char,x1,x2,pen,index,baseline):
 
     found_hole=check_hole_found(upgrade_char)
+    found_hamza=check_hamza(char,upgrade_char)
     height=calculate_part_height(upgrade_char,x1,x2,index,baseline)
     number_of_dotted, _ =get_number_of_dotted(char,upgrade_char)
-    if not found_hole and number_of_dotted==0 and (height < 2 * pen):
+    if not found_hole and number_of_dotted==0 and (height < 2 * pen) and not found_hamza:
         return True
     return False
 

@@ -229,17 +229,17 @@ def sub_word_segmentation(img,upgrade_img):
             separated_regions=separate_regions(Separation_indices,1)
             sub_words.append((parts_dir[i-1][:,separated_regions[0][0]:separated_regions[0][1]+2],parts[i-1][:,separated_regions[0][0]:separated_regions[0][1]+2]))
 
-    for i in range(1,number_of_sub_words):
-        cv2.imwrite('result_image/part'+str(img.shape[0]+img.shape[1]+i)+'00.jpg',sub_words[i-1][0])
-        cv2.imwrite('result_image/part'+str(img.shape[0]+img.shape[1]+i)+'.jpg',sub_words[i-1][1])
+    #for i in range(1,number_of_sub_words):
+        #cv2.imwrite('result_image/part'+str(img.shape[0]+img.shape[1]+i)+'00.jpg',sub_words[i-1][0])
+        #cv2.imwrite('result_image/part'+str(img.shape[0]+img.shape[1]+i)+'.jpg',sub_words[i-1][1])
     return sub_words
 
-def char_segmentation(img,upgrade_img,pen):
+def char_segmentation(img,upgrade_img,pen,baseline):
     img=increase_shape(img,2)
     upgrade_img=increase_shape(upgrade_img,2)
     contour_image,contour=contour_extraction(upgrade_img)
     image,start_point,end_point=up_contour(contour_image,contour,pen)
-    up_contour_chars,baseline=seperated_region_area(image,start_point,end_point)
+    up_contour_chars, _ =seperated_region_area(image,start_point,end_point)
     output_chars=cut_original_sub_word(img,upgrade_img,contour_image,up_contour_chars)
     chars=formation_char_data(output_chars,up_contour_chars)
 
@@ -327,7 +327,9 @@ def char_segmentation(img,upgrade_img,pen):
             marge_two_image(chars[i+1].char,chars[i].char)
             marge_two_image(chars[i+1].upgradeChar,chars[i].upgradeChar)
 
-
+    chars=[]
     for i in range(len_chars):
         if not chars[i].ignore:
             cv2.imwrite('char'+str(i)+'.jpg',chars[i].char)
+            chars.append((determination_image(chars[i].char),determination_image(chars[i].upgradeChar)))
+    return chars
