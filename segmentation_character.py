@@ -448,7 +448,7 @@ def get_number_of_dotted(char,upgrade_char):
         number_of_dotted+=number
     return number_of_dotted,dotted_image
 
-def character_satisfied(char,upgrade_char,x1,x2,pen,index,baseline):
+def character_satisfied(char,upgrade_char,x1,x2,pen,index,baseline,size):
 
     found_hole=check_hole_found(upgrade_char)
     found_hamza=check_hamza(char,upgrade_char)
@@ -458,7 +458,7 @@ def character_satisfied(char,upgrade_char,x1,x2,pen,index,baseline):
         return True
     return False
 
-def check_sheen(part1,part2,pen,index,baseline):
+def check_sheen(part1,part2,pen,index,baseline,size):
     combine_char=part1.char.copy()
     combine_upgrade_char=part1.upgradeChar.copy()
     found_hole1=check_hole_found(part1.upgradeChar)
