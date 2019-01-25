@@ -259,8 +259,8 @@ def char_segmentation(img,upgrade_img,pen,baseline):
                     chars[i-2].ignore=False
             space_counter=0
 
-        elif character_satisfied(chars[i].char,chars[i].upgradeChar,chars[i].startPoint[0],chars[i].endPoint[0],pen,i,baseline) and i!=len_chars-1:
-            if i>=2 and check_sheen(chars[i-1],chars[i-2],pen,i,baseline):
+        elif character_satisfied(chars[i].char,chars[i].upgradeChar,chars[i].startPoint[0],chars[i].endPoint[0],pen,i,baseline,len_chars) and i!=len_chars-1:
+            if i>=2 and check_sheen(chars[i-1],chars[i-2],pen,i,baseline,len_chars):
 
                 chars[i-1].ignore=True
                 chars[i-2].ignore=True
@@ -274,7 +274,7 @@ def char_segmentation(img,upgrade_img,pen,baseline):
 
                 if chars[i].startPoint[0]>baseline+pen:
                     chars[i-1].ignore=True
-                    if check_sheen(chars[i-2],chars[i-3],pen,i,baseline):
+                    if check_sheen(chars[i-2],chars[i-3],pen,i,baseline,len_chars):
                         chars[i-2].ignore=True
                         chars[i-3].ignore=True
                     elif space_counter==2:
