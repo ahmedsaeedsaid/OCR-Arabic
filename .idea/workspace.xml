@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2818c6e4-6020-4f8a-9f29-e2ebb6c695fd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change beforePath="$PROJECT_DIR$/segmentation.py" afterPath="$PROJECT_DIR$/segmentation.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/segmentation_character.py" afterPath="$PROJECT_DIR$/segmentation_character.py" />
-      <change beforePath="$PROJECT_DIR$/test.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="73" lean-forward="true" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+              <caret line="17" column="73" lean-forward="false" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -29,7 +27,7 @@
       <file leaf-file-name="segmentation_algorithms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/segmentation_algorithms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
+            <state relative-caret-position="386">
               <caret line="142" column="21" lean-forward="false" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
               <folding>
                 <element signature="e#84#379#0" expanded="false" />
@@ -51,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="segmentation_filtering.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="segmentation_filtering.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/segmentation_filtering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="112" column="33" lean-forward="false" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+            <state relative-caret-position="221">
+              <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
               <folding>
                 <element signature="e#70#997#0" expanded="false" />
                 <element signature="e#1030#1662#0" expanded="false" />
@@ -71,8 +69,8 @@
       <file leaf-file-name="segmentation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/segmentation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="334" column="16" lean-forward="true" selection-start-line="334" selection-start-column="16" selection-end-line="334" selection-end-column="16" />
+            <state relative-caret-position="222">
+              <caret line="274" column="41" lean-forward="true" selection-start-line="274" selection-start-column="41" selection-end-line="274" selection-end-column="54" />
               <folding>
                 <element signature="e#71#795#0" expanded="false" />
                 <element signature="e#832#2465#0" expanded="false" />
@@ -80,18 +78,16 @@
                 <element signature="e#3944#5347#0" expanded="false" />
                 <element signature="e#5414#6327#0" expanded="false" />
                 <element signature="e#6377#9114#0" expanded="false" />
-                <element signature="e#9173#13227#0" expanded="false" />
-                <element signature="e#10799#11855#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="segmentation_character.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="segmentation_character.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/segmentation_character.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="448" column="68" lean-forward="false" selection-start-line="448" selection-start-column="68" selection-end-line="448" selection-end-column="68" />
+            <state relative-caret-position="267">
+              <caret line="418" column="70" lean-forward="false" selection-start-line="418" selection-start-column="70" selection-end-line="418" selection-end-column="70" />
               <folding>
                 <element signature="e#374#1345#0" expanded="false" />
                 <element signature="e#1393#2907#0" expanded="false" />
@@ -105,10 +101,10 @@
                 <element signature="e#13935#15382#0" expanded="false" />
                 <element signature="e#15411#15713#0" expanded="false" />
                 <element signature="e#15755#16645#0" expanded="false" />
-                <element signature="e#16713#17064#0" expanded="false" />
-                <element signature="e#17115#17825#0" expanded="false" />
-                <element signature="e#17901#18249#0" expanded="false" />
-                <element signature="e#18304#19418#0" expanded="false" />
+                <element signature="e#16722#17138#0" expanded="false" />
+                <element signature="e#17189#17899#0" expanded="false" />
+                <element signature="e#17975#18332#0" expanded="false" />
+                <element signature="e#18387#19519#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -174,9 +170,9 @@
         <option value="$PROJECT_DIR$/pre_processing.py" />
         <option value="$PROJECT_DIR$/segmentation_algorithms.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/segmentation_character.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/segmentation.py" />
+        <option value="$PROJECT_DIR$/segmentation_character.py" />
       </list>
     </option>
   </component>
@@ -201,6 +197,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,7 +209,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,7 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -439,8 +434,6 @@
             <element signature="e#3944#5347#0" expanded="false" />
             <element signature="e#5414#6327#0" expanded="false" />
             <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13227#0" expanded="false" />
-            <element signature="e#10799#11855#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -449,7 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -486,8 +478,6 @@
             <element signature="e#3944#5347#0" expanded="false" />
             <element signature="e#5414#6327#0" expanded="false" />
             <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13227#0" expanded="false" />
-            <element signature="e#10799#11855#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -496,7 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -526,8 +515,6 @@
             <element signature="e#3944#5347#0" expanded="false" />
             <element signature="e#5414#6327#0" expanded="false" />
             <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13227#0" expanded="false" />
-            <element signature="e#10799#11855#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -543,7 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -565,8 +551,6 @@
             <element signature="e#3944#5347#0" expanded="false" />
             <element signature="e#5414#6327#0" expanded="false" />
             <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13227#0" expanded="false" />
-            <element signature="e#10799#11855#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -582,7 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -597,8 +580,6 @@
             <element signature="e#3944#5347#0" expanded="false" />
             <element signature="e#5414#6327#0" expanded="false" />
             <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13227#0" expanded="false" />
-            <element signature="e#10799#11855#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -614,7 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,8 +618,6 @@
             <element signature="e#3944#5347#0" expanded="false" />
             <element signature="e#5414#6327#0" expanded="false" />
             <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13227#0" expanded="false" />
-            <element signature="e#10799#11855#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -648,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,8 +648,6 @@
             <element signature="e#3944#5347#0" expanded="false" />
             <element signature="e#5414#6327#0" expanded="false" />
             <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13227#0" expanded="false" />
-            <element signature="e#10799#11855#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -698,16 +673,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/char.py" />
-    <entry file="file://$PROJECT_DIR$/counter_image.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/counter_image.jpg" />
     <entry file="file://$USER_HOME$/.PyCharmEdu2017.3/system/python_stubs/1013586911/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="1110" column="0" lean-forward="false" selection-start-line="1110" selection-start-column="0" selection-end-line="1111" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,18 +685,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_image.jpg" />
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="73" lean-forward="false" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_image.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/segmentation_algorithms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
+        <state relative-caret-position="386">
           <caret line="142" column="21" lean-forward="false" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
           <folding>
             <element signature="e#84#379#0" expanded="false" />
@@ -747,10 +721,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation_filtering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding>
+            <element signature="e#70#997#0" expanded="false" />
+            <element signature="e#1030#1662#0" expanded="false" />
+            <element signature="e#1708#3663#0" expanded="false" />
+            <element signature="e#3712#4039#0" expanded="false" />
+            <element signature="e#4088#4307#0" expanded="false" />
+            <element signature="e#4343#5002#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="274" column="41" lean-forward="true" selection-start-line="274" selection-start-column="41" selection-end-line="274" selection-end-column="54" />
+          <folding>
+            <element signature="e#71#795#0" expanded="false" />
+            <element signature="e#832#2465#0" expanded="false" />
+            <element signature="e#2501#3908#0" expanded="false" />
+            <element signature="e#3944#5347#0" expanded="false" />
+            <element signature="e#5414#6327#0" expanded="false" />
+            <element signature="e#6377#9114#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/segmentation_character.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="448" column="68" lean-forward="false" selection-start-line="448" selection-start-column="68" selection-end-line="448" selection-end-column="68" />
+        <state relative-caret-position="267">
+          <caret line="418" column="70" lean-forward="false" selection-start-line="418" selection-start-column="70" selection-end-line="418" selection-end-column="70" />
           <folding>
             <element signature="e#374#1345#0" expanded="false" />
             <element signature="e#1393#2907#0" expanded="false" />
@@ -764,58 +768,10 @@
             <element signature="e#13935#15382#0" expanded="false" />
             <element signature="e#15411#15713#0" expanded="false" />
             <element signature="e#15755#16645#0" expanded="false" />
-            <element signature="e#16713#17064#0" expanded="false" />
-            <element signature="e#17115#17825#0" expanded="false" />
-            <element signature="e#17901#18249#0" expanded="false" />
-            <element signature="e#18304#19418#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="73" lean-forward="true" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/segmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="334" column="16" lean-forward="true" selection-start-line="334" selection-start-column="16" selection-end-line="334" selection-end-column="16" />
-          <folding>
-            <element signature="e#71#795#0" expanded="false" />
-            <element signature="e#832#2465#0" expanded="false" />
-            <element signature="e#2501#3908#0" expanded="false" />
-            <element signature="e#3944#5347#0" expanded="false" />
-            <element signature="e#5414#6327#0" expanded="false" />
-            <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13227#0" expanded="false" />
-            <element signature="e#10799#11855#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="17" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/segmentation_filtering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="112" column="33" lean-forward="false" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
-          <folding>
-            <element signature="e#70#997#0" expanded="false" />
-            <element signature="e#1030#1662#0" expanded="false" />
-            <element signature="e#1708#3663#0" expanded="false" />
-            <element signature="e#3712#4039#0" expanded="false" />
-            <element signature="e#4088#4307#0" expanded="false" />
-            <element signature="e#4343#5002#0" expanded="false" />
+            <element signature="e#16722#17138#0" expanded="false" />
+            <element signature="e#17189#17899#0" expanded="false" />
+            <element signature="e#17975#18332#0" expanded="false" />
+            <element signature="e#18387#19519#0" expanded="false" />
           </folding>
         </state>
       </provider>

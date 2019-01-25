@@ -416,11 +416,13 @@ def check_hamza(char,upgrade_char):
         return False
     return False
 
-def calculate_part_height(upgrade_char,x1,x2,index,baseline):
+def calculate_part_height(upgrade_char,x1,x2,index,baseline,pen,size):
     if index==0 :
         base = x2
     else:
         base = x1
+    if index==size-1 and x2>baseline+pen:
+        return pen * 3
     test_image=upgrade_char.copy()
     for i in np.arange(upgrade_char.shape[0]):
         for j in np.arange(upgrade_char.shape[1]):
@@ -450,7 +452,7 @@ def character_satisfied(char,upgrade_char,x1,x2,pen,index,baseline):
 
     found_hole=check_hole_found(upgrade_char)
     found_hamza=check_hamza(char,upgrade_char)
-    height=calculate_part_height(upgrade_char,x1,x2,index,baseline)
+    height=calculate_part_height(upgrade_char,x1,x2,index,baseline,pen,size)
     number_of_dotted, _ =get_number_of_dotted(char,upgrade_char)
     if not found_hole and number_of_dotted==0 and (height < 2 * pen) and not found_hamza:
         return True
@@ -461,8 +463,8 @@ def check_sheen(part1,part2,pen,index,baseline):
     combine_upgrade_char=part1.upgradeChar.copy()
     found_hole1=check_hole_found(part1.upgradeChar)
     found_hole2=check_hole_found(part2.upgradeChar)
-    height1=calculate_part_height(part1.upgradeChar,part1.startPoint[0],part1.endPoint[0],index,baseline)
-    height2=calculate_part_height(part2.upgradeChar,part2.startPoint[0],part2.endPoint[0],index,baseline)
+    height1=calculate_part_height(part1.upgradeChar,part1.startPoint[0],part1.endPoint[0],index,baseline,pen,size)
+    height2=calculate_part_height(part2.upgradeChar,part2.startPoint[0],part2.endPoint[0],index,baseline,pen,size)
 
     if not found_hole1 and not found_hole2 and (height1 < 2 * pen) and (height2 < 2 * pen):
         marge_two_image(combine_char,part2.char)
