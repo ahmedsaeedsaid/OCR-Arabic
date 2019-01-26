@@ -421,7 +421,7 @@ def calculate_part_height(upgrade_char,x1,x2,index,baseline,pen,size):
         base = x2
     else:
         base = x1
-    if index==size-1 and x2>baseline+pen:
+    if index==size-2 and x2>baseline+pen:
         return pen * 3
     test_image=upgrade_char.copy()
     for i in np.arange(upgrade_char.shape[0]):
