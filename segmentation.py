@@ -42,7 +42,9 @@ def column_segmentation(img):
         new_separated_regions=[]
         columns=[]
         for i in range(len(separated_regions)):
+
             if (separated_regions[i][1]-separated_regions[i][0])<threshold:
+
                 if i==(len(separated_regions)-1) or (i != 0 and (separated_regions[i][0]-separated_regions[i-1][1]) <(separated_regions[i+1][0]-separated_regions[i][1])):
                     new_separated_regions[len(new_separated_regions)-1]=(new_separated_regions[len(new_separated_regions)-1][0],separated_regions[i][1])
                 else:
@@ -67,6 +69,8 @@ def line_segmentation(img) :
 
     # calculate numbers of lines
     number_of_line = int(img.shape[0]/approx_height_line)
+    if((img.shape[0]/approx_height_line)%number_of_line>0.85):
+        number_of_line+=1
     if number_of_line <= 1 :
         return [img]
 
@@ -104,7 +108,7 @@ def line_segmentation(img) :
 def word_segmentation(img) :
 
     #remove under line from image
-    img = remove_underline(img)
+    #img = remove_underline(img)
 
     # clear increases in line
     upgrade_image,baseline = clear_diacritics(img)
@@ -114,7 +118,6 @@ def word_segmentation(img) :
 
     # get separation region indices and separated regions
     Separation_indices=separation_indices(V_proj)
-
     # split image to words
     if(len(Separation_indices)>0):
 
@@ -126,15 +129,15 @@ def word_segmentation(img) :
             current_part=separated_regions[i]
             pre_pen=pen_size(upgrade_image[: , pre_part[0]:pre_part[1]])
             current_pen=pen_size(upgrade_image[: , current_part[0]:current_part[1]])
-            if (current_part[0]-pre_part[1])>((pre_pen+current_pen)/2):
-                words.append((img[: ,  word[0]:word[1]],upgrade_image[: , word[0]:word[1]]))
+            if (current_part[0]-pre_part[1])>((pre_pen+current_pen)/2) :
+                words.append((img[: ,  word[0]:word[1]+2],upgrade_image[: , word[0]:word[1]]))
                 #cv2.imwrite('result_image/word_segmanted'+str(img.shape[0]+img.shape[1]+word[0]+word[1]+i)+'.jpg',upgrade_image[: , word[0]:word[1]])
                 word=current_part
             else:
                 word=(word[0],current_part[1])
             pre_part=current_part
 
-        words.append((img[: ,  word[0]:word[1]],upgrade_image[: , word[0]:word[1]]))
+        words.append((img[: ,  word[0]:word[1]+2],upgrade_image[: , word[0]:word[1]]))
     else:
         words=[(img,upgrade_image)]
     return words,baseline
@@ -142,13 +145,13 @@ def word_segmentation(img) :
 def word_segmentation_V2(img,threshold_word_segmentation) :
 
     #remove under line from image
-    img = remove_underline(img)
+    #img = remove_underline(img)
 
     # clear increases in line
     upgrade_image,baseline = clear_diacritics(img)
 
     # vertical projection is applied
-    V_proj=vertical_projection(upgrade_image)
+    V_proj=vertical_projection(img)
 
     # get separation region indices and separated regions
     Separation_indices=separation_indices(V_proj)
@@ -330,6 +333,6 @@ def char_segmentation(img,upgrade_img,pen,baseline):
     chars=[]
     for i in range(len_chars):
         if not chars[i].ignore:
-            cv2.imwrite('char'+str(i)+'.jpg',chars[i].char)
+            #cv2.imwrite('char'+str(i)+'.jpg',chars[i].char)
             chars.append((determination_image(chars[i].char),determination_image(chars[i].upgradeChar)))
     return chars

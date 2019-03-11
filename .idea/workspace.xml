@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2818c6e4-6020-4f8a-9f29-e2ebb6c695fd" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/DataSetDesign.py" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/segmentation_character.py" afterPath="$PROJECT_DIR$/segmentation_character.py" />
+      <change beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change beforePath="$PROJECT_DIR$/pre_processing.py" afterPath="$PROJECT_DIR$/pre_processing.py" />
+      <change beforePath="$PROJECT_DIR$/segmentation.py" afterPath="$PROJECT_DIR$/segmentation.py" />
+      <change beforePath="$PROJECT_DIR$/segmentation_filtering.py" afterPath="$PROJECT_DIR$/segmentation_filtering.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +22,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="73" lean-forward="false" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+            <state relative-caret-position="102">
+              <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -28,13 +32,12 @@
       <file leaf-file-name="segmentation_algorithms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/segmentation_algorithms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="142" column="21" lean-forward="false" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
+            <state relative-caret-position="204">
+              <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
               <folding>
                 <element signature="e#84#379#0" expanded="false" />
                 <element signature="e#415#642#0" expanded="false" />
                 <element signature="e#680#908#0" expanded="false" />
-                <element signature="e#944#1035#0" expanded="false" />
                 <element signature="e#1093#1629#0" expanded="false" />
                 <element signature="e#1669#1978#0" expanded="false" />
                 <element signature="e#2007#2420#0" expanded="false" />
@@ -50,46 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="segmentation_filtering.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/segmentation_filtering.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-              <folding>
-                <element signature="e#70#997#0" expanded="false" />
-                <element signature="e#1030#1662#0" expanded="false" />
-                <element signature="e#1708#3663#0" expanded="false" />
-                <element signature="e#3712#4039#0" expanded="false" />
-                <element signature="e#4088#4307#0" expanded="false" />
-                <element signature="e#4343#5002#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="segmentation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/segmentation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="236" column="52" lean-forward="false" selection-start-line="236" selection-start-column="52" selection-end-line="236" selection-end-column="52" />
-              <folding>
-                <element signature="e#71#795#0" expanded="false" />
-                <element signature="e#832#2465#0" expanded="false" />
-                <element signature="e#2501#3908#0" expanded="false" />
-                <element signature="e#3944#5347#0" expanded="false" />
-                <element signature="e#5414#6327#0" expanded="false" />
-                <element signature="e#6377#9114#0" expanded="false" />
-                <element signature="e#9173#13257#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="segmentation_character.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="segmentation_character.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/segmentation_character.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="418" column="70" lean-forward="false" selection-start-line="418" selection-start-column="70" selection-end-line="418" selection-end-column="70" />
+            <state relative-caret-position="561">
+              <caret line="433" column="18" lean-forward="false" selection-start-line="433" selection-start-column="18" selection-end-line="433" selection-end-column="18" />
               <folding>
                 <element signature="e#374#1345#0" expanded="false" />
                 <element signature="e#1393#2907#0" expanded="false" />
@@ -112,6 +80,61 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="segmentation_filtering.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/segmentation_filtering.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <folding>
+                <element signature="e#1050#1682#0" expanded="false" />
+                <element signature="e#1728#3681#0" expanded="false" />
+                <element signature="e#3730#4057#0" expanded="false" />
+                <element signature="e#4106#4325#0" expanded="false" />
+                <element signature="e#4361#5020#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSetDesign.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DataSetDesign.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="segmentation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/segmentation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+              <folding>
+                <element signature="e#71#795#0" expanded="false" />
+                <element signature="e#2503#3999#0" expanded="false" />
+                <element signature="e#4035#5443#0" expanded="false" />
+                <element signature="e#5510#6414#0" expanded="false" />
+                <element signature="e#6464#9201#0" expanded="false" />
+                <element signature="e#9260#13345#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pre_processing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pre_processing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="100" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -123,9 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Separation_indices_f</find>
-      <find>calculate_threshold_word_sigmentation</find>
-      <find>imutils</find>
       <find>CFP_image</find>
       <find>cut</find>
       <find>crop</find>
@@ -150,9 +170,12 @@
       <find>temp_image</find>
       <find>contour_image</find>
       <find>points_clockwise_diraction</find>
-      <find>cv2.im</find>
       <find>pri</find>
       <find>print</find>
+      <find>remove_underline</find>
+      <find>return</find>
+      <find>cv2.</find>
+      <find>cv2.im</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,19 +191,20 @@
         <option value="$PROJECT_DIR$/sigmentation_helps.py" />
         <option value="$PROJECT_DIR$/sigmentation.py" />
         <option value="$PROJECT_DIR$/char.py" />
-        <option value="$PROJECT_DIR$/segmentation_filtering.py" />
-        <option value="$PROJECT_DIR$/pre_processing.py" />
-        <option value="$PROJECT_DIR$/segmentation_algorithms.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/segmentation.py" />
         <option value="$PROJECT_DIR$/segmentation_character.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/segmentation_algorithms.py" />
+        <option value="$PROJECT_DIR$/segmentation_filtering.py" />
+        <option value="$PROJECT_DIR$/segmentation.py" />
+        <option value="$PROJECT_DIR$/pre_processing.py" />
+        <option value="$PROJECT_DIR$/DataSetDesign.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
-    <option name="y" value="7" />
+    <option name="y" value="20" />
     <option name="width" value="1346" />
     <option name="height" value="728" />
   </component>
@@ -199,7 +223,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,6 +234,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,7 +253,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.DataSetDesign">
+    <configuration name="DataSetDesign" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OCR Arabic" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataSetDesign.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -261,24 +303,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="OCR Arabic" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pre_processing.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="pre_processing_helps" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="OCR Arabic" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pre_processing_helps.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -325,15 +349,15 @@
       <item index="1" class="java.lang.String" itemvalue="Python.pre_processing" />
       <item index="2" class="java.lang.String" itemvalue="Python.main" />
       <item index="3" class="java.lang.String" itemvalue="Python.test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.pre_processing_helps" />
+      <item index="4" class="java.lang.String" itemvalue="Python.DataSetDesign" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.main" />
-        <item index="2" class="java.lang.String" itemvalue="Python.sigmentation (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pre_processing" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pre_processing_helps" />
+        <item index="0" class="java.lang.String" itemvalue="Python.DataSetDesign" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.main" />
+        <item index="3" class="java.lang.String" itemvalue="Python.sigmentation (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pre_processing" />
       </list>
     </recent_temporary>
   </component>
@@ -344,9 +368,10 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21800596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2061012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32542372" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -383,18 +408,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="47" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pre_processing_helps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pre_processing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -430,12 +448,11 @@
           <caret line="129" column="23" lean-forward="false" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="23" />
           <folding>
             <element signature="e#71#795#0" expanded="false" />
-            <element signature="e#832#2465#0" expanded="false" />
-            <element signature="e#2501#3908#0" expanded="false" />
-            <element signature="e#3944#5347#0" expanded="false" />
-            <element signature="e#5414#6327#0" expanded="false" />
-            <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13257#0" expanded="false" />
+            <element signature="e#2503#3999#0" expanded="false" />
+            <element signature="e#4035#5443#0" expanded="false" />
+            <element signature="e#5510#6414#0" expanded="false" />
+            <element signature="e#6464#9201#0" expanded="false" />
+            <element signature="e#9260#13345#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -475,12 +492,11 @@
           <caret line="201" column="9" lean-forward="false" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="20" />
           <folding>
             <element signature="e#71#795#0" expanded="false" />
-            <element signature="e#832#2465#0" expanded="false" />
-            <element signature="e#2501#3908#0" expanded="false" />
-            <element signature="e#3944#5347#0" expanded="false" />
-            <element signature="e#5414#6327#0" expanded="false" />
-            <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13257#0" expanded="false" />
+            <element signature="e#2503#3999#0" expanded="false" />
+            <element signature="e#4035#5443#0" expanded="false" />
+            <element signature="e#5510#6414#0" expanded="false" />
+            <element signature="e#6464#9201#0" expanded="false" />
+            <element signature="e#9260#13345#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -513,12 +529,11 @@
           <caret line="146" column="4" lean-forward="false" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
           <folding>
             <element signature="e#71#795#0" expanded="false" />
-            <element signature="e#832#2465#0" expanded="false" />
-            <element signature="e#2501#3908#0" expanded="false" />
-            <element signature="e#3944#5347#0" expanded="false" />
-            <element signature="e#5414#6327#0" expanded="false" />
-            <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13257#0" expanded="false" />
+            <element signature="e#2503#3999#0" expanded="false" />
+            <element signature="e#4035#5443#0" expanded="false" />
+            <element signature="e#5510#6414#0" expanded="false" />
+            <element signature="e#6464#9201#0" expanded="false" />
+            <element signature="e#9260#13345#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -550,12 +565,11 @@
           <caret line="105" column="4" lean-forward="false" selection-start-line="105" selection-start-column="4" selection-end-line="106" selection-end-column="20" />
           <folding>
             <element signature="e#71#795#0" expanded="false" />
-            <element signature="e#832#2465#0" expanded="false" />
-            <element signature="e#2501#3908#0" expanded="false" />
-            <element signature="e#3944#5347#0" expanded="false" />
-            <element signature="e#5414#6327#0" expanded="false" />
-            <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13257#0" expanded="false" />
+            <element signature="e#2503#3999#0" expanded="false" />
+            <element signature="e#4035#5443#0" expanded="false" />
+            <element signature="e#5510#6414#0" expanded="false" />
+            <element signature="e#6464#9201#0" expanded="false" />
+            <element signature="e#9260#13345#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -580,12 +594,11 @@
           <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
           <folding>
             <element signature="e#71#795#0" expanded="false" />
-            <element signature="e#832#2465#0" expanded="false" />
-            <element signature="e#2501#3908#0" expanded="false" />
-            <element signature="e#3944#5347#0" expanded="false" />
-            <element signature="e#5414#6327#0" expanded="false" />
-            <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13257#0" expanded="false" />
+            <element signature="e#2503#3999#0" expanded="false" />
+            <element signature="e#4035#5443#0" expanded="false" />
+            <element signature="e#5510#6414#0" expanded="false" />
+            <element signature="e#6464#9201#0" expanded="false" />
+            <element signature="e#9260#13345#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -619,12 +632,11 @@
           <caret line="108" column="12" lean-forward="false" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
           <folding>
             <element signature="e#71#795#0" expanded="false" />
-            <element signature="e#832#2465#0" expanded="false" />
-            <element signature="e#2501#3908#0" expanded="false" />
-            <element signature="e#3944#5347#0" expanded="false" />
-            <element signature="e#5414#6327#0" expanded="false" />
-            <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13257#0" expanded="false" />
+            <element signature="e#2503#3999#0" expanded="false" />
+            <element signature="e#4035#5443#0" expanded="false" />
+            <element signature="e#5510#6414#0" expanded="false" />
+            <element signature="e#6464#9201#0" expanded="false" />
+            <element signature="e#9260#13345#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -650,12 +662,11 @@
           <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding>
             <element signature="e#71#795#0" expanded="false" />
-            <element signature="e#832#2465#0" expanded="false" />
-            <element signature="e#2501#3908#0" expanded="false" />
-            <element signature="e#3944#5347#0" expanded="false" />
-            <element signature="e#5414#6327#0" expanded="false" />
-            <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13257#0" expanded="false" />
+            <element signature="e#2503#3999#0" expanded="false" />
+            <element signature="e#4035#5443#0" expanded="false" />
+            <element signature="e#5510#6414#0" expanded="false" />
+            <element signature="e#6464#9201#0" expanded="false" />
+            <element signature="e#9260#13345#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -689,81 +700,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pre_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_image.jpg" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="73" lean-forward="false" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+        <state relative-caret-position="102">
+          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/segmentation_filtering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding>
-            <element signature="e#70#997#0" expanded="false" />
-            <element signature="e#1030#1662#0" expanded="false" />
-            <element signature="e#1708#3663#0" expanded="false" />
-            <element signature="e#3712#4039#0" expanded="false" />
-            <element signature="e#4088#4307#0" expanded="false" />
-            <element signature="e#4343#5002#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/segmentation_algorithms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="142" column="21" lean-forward="false" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
-          <folding>
-            <element signature="e#84#379#0" expanded="false" />
-            <element signature="e#415#642#0" expanded="false" />
-            <element signature="e#680#908#0" expanded="false" />
-            <element signature="e#944#1035#0" expanded="false" />
-            <element signature="e#1093#1629#0" expanded="false" />
-            <element signature="e#1669#1978#0" expanded="false" />
-            <element signature="e#2007#2420#0" expanded="false" />
-            <element signature="e#2470#2764#0" expanded="false" />
-            <element signature="e#2790#3404#0" expanded="false" />
-            <element signature="e#3449#3792#0" expanded="false" />
-            <element signature="e#3829#4061#0" expanded="false" />
-            <element signature="e#4103#4254#0" expanded="false" />
-            <element signature="e#4282#4443#0" expanded="false" />
-            <element signature="e#4480#4690#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/segmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="236" column="52" lean-forward="false" selection-start-line="236" selection-start-column="52" selection-end-line="236" selection-end-column="52" />
-          <folding>
-            <element signature="e#71#795#0" expanded="false" />
-            <element signature="e#832#2465#0" expanded="false" />
-            <element signature="e#2501#3908#0" expanded="false" />
-            <element signature="e#3944#5347#0" expanded="false" />
-            <element signature="e#5414#6327#0" expanded="false" />
-            <element signature="e#6377#9114#0" expanded="false" />
-            <element signature="e#9173#13257#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/segmentation_character.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="418" column="70" lean-forward="false" selection-start-line="418" selection-start-column="70" selection-end-line="418" selection-end-column="70" />
+        <state relative-caret-position="561">
+          <caret line="433" column="18" lean-forward="false" selection-start-line="433" selection-start-column="18" selection-end-line="433" selection-end-column="18" />
           <folding>
             <element signature="e#374#1345#0" expanded="false" />
             <element signature="e#1393#2907#0" expanded="false" />
@@ -781,6 +731,75 @@
             <element signature="e#17189#17899#0" expanded="false" />
             <element signature="e#17980#18337#0" expanded="false" />
             <element signature="e#18397#19529#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation_algorithms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+          <folding>
+            <element signature="e#84#379#0" expanded="false" />
+            <element signature="e#415#642#0" expanded="false" />
+            <element signature="e#680#908#0" expanded="false" />
+            <element signature="e#1093#1629#0" expanded="false" />
+            <element signature="e#1669#1978#0" expanded="false" />
+            <element signature="e#2007#2420#0" expanded="false" />
+            <element signature="e#2470#2764#0" expanded="false" />
+            <element signature="e#2790#3404#0" expanded="false" />
+            <element signature="e#3449#3792#0" expanded="false" />
+            <element signature="e#3829#4061#0" expanded="false" />
+            <element signature="e#4103#4254#0" expanded="false" />
+            <element signature="e#4282#4443#0" expanded="false" />
+            <element signature="e#4480#4690#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation_filtering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="e#1050#1682#0" expanded="false" />
+            <element signature="e#1728#3681#0" expanded="false" />
+            <element signature="e#3730#4057#0" expanded="false" />
+            <element signature="e#4106#4325#0" expanded="false" />
+            <element signature="e#4361#5020#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+          <folding>
+            <element signature="e#71#795#0" expanded="false" />
+            <element signature="e#2503#3999#0" expanded="false" />
+            <element signature="e#4035#5443#0" expanded="false" />
+            <element signature="e#5510#6414#0" expanded="false" />
+            <element signature="e#6464#9201#0" expanded="false" />
+            <element signature="e#9260#13345#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSetDesign.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

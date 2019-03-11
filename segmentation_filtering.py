@@ -7,7 +7,7 @@ def clear_diacritics(img):
 
     peaksList = find_peaks(H_proj)
     if len(peaksList[0])==0:
-        return img
+        return img,int(img.shape[0]/2)
     # get max peak and draw white line in max peak
     peaksList = find_max(peaksList[0],peaksList[1],1)
     upgrade_image=np.copy(img)
@@ -95,9 +95,9 @@ def remove_underline_help(img,max,min):
                     if (img[line_range[0]-1 , i+1]==255) and img[line_range[1]+1 , i-1]==255 :
                         continue
 
-                    img[line_range[0]:line_range[1]+1 , i]=0
+                    img[line_range[0]:line_range[1] , i]=0
                 except:
-                    img[line_range[0]:line_range[1]+1 , i]=0
+                    img[line_range[0]:line_range[1] , i-1]=0
 
     return img
 
