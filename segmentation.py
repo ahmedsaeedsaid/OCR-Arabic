@@ -108,7 +108,7 @@ def line_segmentation(img) :
 def word_segmentation(img) :
 
     #remove under line from image
-    #img = remove_underline(img)
+    img = remove_underline(img)
 
     # clear increases in line
     upgrade_image,baseline = clear_diacritics(img)
@@ -145,7 +145,7 @@ def word_segmentation(img) :
 def word_segmentation_V2(img,threshold_word_segmentation) :
 
     #remove under line from image
-    #img = remove_underline(img)
+    img = remove_underline(img)
 
     # clear increases in line
     upgrade_image,baseline = clear_diacritics(img)
@@ -336,3 +336,4 @@ def char_segmentation(img,upgrade_img,pen,baseline):
             #cv2.imwrite('char'+str(i)+'.jpg',chars[i].char)
             chars.append((determination_image(chars[i].char),determination_image(chars[i].upgradeChar)))
     return chars
+
