@@ -130,14 +130,14 @@ def word_segmentation(img) :
             pre_pen=pen_size(upgrade_image[: , pre_part[0]:pre_part[1]])
             current_pen=pen_size(upgrade_image[: , current_part[0]:current_part[1]])
             if (current_part[0]-pre_part[1])>((pre_pen+current_pen)/2) :
-                words.append((img[: ,  word[0]:word[1]+2],upgrade_image[: , word[0]:word[1]]))
+                words.append((img[: ,  word[0]:word[1]],upgrade_image[: , word[0]:word[1]]))
                 #cv2.imwrite('result_image/word_segmanted'+str(img.shape[0]+img.shape[1]+word[0]+word[1]+i)+'.jpg',upgrade_image[: , word[0]:word[1]])
                 word=current_part
             else:
                 word=(word[0],current_part[1])
             pre_part=current_part
 
-        words.append((img[: ,  word[0]:word[1]+2],upgrade_image[: , word[0]:word[1]]))
+        words.append((img[: ,  word[0]:word[1]],upgrade_image[: , word[0]:word[1]]))
     else:
         words=[(img,upgrade_image)]
     return words,baseline
@@ -330,10 +330,10 @@ def char_segmentation(img,upgrade_img,pen,baseline):
             marge_two_image(chars[i+1].char,chars[i].char)
             marge_two_image(chars[i+1].upgradeChar,chars[i].upgradeChar)
 
-    chars=[]
+
     for i in range(len_chars):
         if not chars[i].ignore:
-            #cv2.imwrite('char'+str(i)+'.jpg',chars[i].char)
+            cv2.imwrite('char'+str(i)+'.jpg',chars[i].char)
             chars.append((determination_image(chars[i].char),determination_image(chars[i].upgradeChar)))
     return chars
 
