@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import ndimage
+
 def rotate_image(image):
     # convert the image to grayscale and flip the foreground
 	# and background to ensure foreground is now "white" and

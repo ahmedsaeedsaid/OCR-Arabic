@@ -46,12 +46,12 @@ def separate_regions(Separation_indices,threshold):
             preavis_index=index
 
         elif (index-preavis_index) > threshold:
-            separated_regions.append((min,preavis_index))
+            separated_regions.append((min,preavis_index+2))
             min=index
             preavis_index=index
         else:
             preavis_index=index
-    separated_regions.append((min,preavis_index))
+    separated_regions.append((min,preavis_index+2))
     return separated_regions
 
 def count_spaces_connected(list):
@@ -153,3 +153,11 @@ def increase_shape(img,value):
         for i in np.arange(img.shape[0]):
             image[i+value][j+value]=img.item(i,j)
     return image
+
+def calculate_number_white_pixels(image):
+    count=0
+    for j in np.arange(image.shape[1]):
+        for i in np.arange(image.shape[0]):
+            if image[i][j]==255:
+                count+=1
+    return count

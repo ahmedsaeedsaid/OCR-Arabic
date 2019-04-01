@@ -30,6 +30,6 @@ def pre_processing(image_path):
             if gray.item(i,j)<230:
                img_clean[i,j]=255
     img_clean=np.uint8(img_clean)'''
-    #cv2.imwrite('result_image/Result_image_clean.jpg',img_clean)
+    cv2.imwrite('result_image/Result_image_clean.jpg',img_clean)
     return img_clean
 

@@ -106,10 +106,10 @@ def line_segmentation(img) :
     return lines
 
 def word_segmentation(img) :
-
+    cv2.imwrite('result_image/line.jpg',img)
     #remove under line from image
     img = remove_underline(img)
-
+    cv2.imwrite('result_image/removed_line.jpg',img)
     # clear increases in line
     upgrade_image,baseline = clear_diacritics(img)
 
@@ -238,13 +238,13 @@ def sub_word_segmentation(img,upgrade_img):
     return sub_words
 
 def char_segmentation(img,upgrade_img,pen,baseline):
-    img=increase_shape(img,2)
-    upgrade_img=increase_shape(upgrade_img,2)
-    contour_image,contour=contour_extraction(upgrade_img)
-    image,start_point,end_point=up_contour(contour_image,contour,pen)
-    up_contour_chars, _ =seperated_region_area(image,start_point,end_point)
-    output_chars=cut_original_sub_word(img,upgrade_img,contour_image,up_contour_chars)
-    chars=formation_char_data(output_chars,up_contour_chars)
+    img = increase_shape(img,2)
+    upgrade_img = increase_shape(upgrade_img,2)
+    contour_image,contour = contour_extraction(upgrade_img)
+    image,start_point,end_point = up_contour(contour_image,contour,pen)
+    up_contour_chars, _ = seperated_region_area(image,start_point,end_point)
+    output_chars = cut_original_sub_word(img,upgrade_img,contour_image,up_contour_chars)
+    chars = formation_char_data(output_chars,up_contour_chars)
 
 
     space_counter=0
@@ -333,7 +333,7 @@ def char_segmentation(img,upgrade_img,pen,baseline):
 
     for i in range(len_chars):
         if not chars[i].ignore:
-            cv2.imwrite('char'+str(i)+'.jpg',chars[i].char)
-            chars.append((determination_image(chars[i].char),determination_image(chars[i].upgradeChar)))
+            cv2.imwrite('result_image/char'+str(i)+'.jpg',chars[i].char)
+            #chars.append((determination_image(chars[i].char),determination_image(chars[i].upgradeChar)))
+            continue
     return chars
-

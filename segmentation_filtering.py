@@ -36,51 +36,51 @@ def remove_underline(img):
 
     # split image to words
     if(len(Separation_indices)>0):
-        #threshold_word_sigmentation=round(pen_size(upgrade_image,Separation_indices)+2)
         separated_regions=separate_regions(Separation_indices,1)
         for i in range(len(separated_regions)):
             min=separated_regions[i][0]
             max=separated_regions[i][1]
-            #remove under line from image
-            img = remove_underline_help(img,max,min)
+            #remove under line from subWord
+            img = remove_underline_help(img,max-2,min)
     return img
 
 def remove_underline_help(img,max,min):
     word=img[: , min:max]
+    # horizontal projection is applied
     H_proj=horizontal_projection(word)
+
+    # declare Variables
     min_index=-1
     max_index=-1
     ranges=[]
+
+    # get ranges of street line
     for i in range(len(H_proj)):
-        if (max-min)==H_proj[i]:
+        if (max-min) == H_proj[i]:
             if min_index==-1:
                 min_index=i
             max_index=i
         elif  min_index !=-1:
             ranges.append((min_index,max_index))
             min_index=-1
-    if len(ranges) > 0:
-        counter_up=0
-        counter_down=0
 
-        aproxmate_pen_size=1
-        for range_1 in ranges:
-            if aproxmate_pen_size<(range_1[1]-range_1[0]+1):
-                aproxmate_pen_size=range_1[1]-range_1[0]+1
+
+    if len(ranges) > 0:
         line_range=None
         for range_1 in ranges:
-            for i in np.arange(word.shape[1]):
-                if (range_1[0]-1)<0:
-                    break
-                if word.item(range_1[0]-1,i)==255:
-                    counter_up+=1
-            for i in np.arange(word.shape[1]):
-                if (range_1[1]+1)>word.shape[0]:
-                    break
-                if word.item(range_1[1]+1,i)==255:
-                    counter_down+=1
-            if (counter_down+counter_up)<(aproxmate_pen_size*20*word.shape[1])/100:
 
+            count_upper=calculate_number_white_pixels(word[:range_1[0] , :])
+            count_down=calculate_number_white_pixels(word[range_1[1]+1: , :])
+            count_pure=calculate_number_white_pixels(word)
+            max_H_upper=0
+            max_H_down =0
+            H_upper=horizontal_projection(word[:range_1[0] , :])
+            H_down=horizontal_projection(word[range_1[1]+1: , :])
+            if len(H_upper)> 0:
+                max_H_upper = np.max(np.array(H_upper))
+            if len(H_down)> 0:
+                max_H_down = np.max(np.array(H_down))
+            if (count_down+count_upper)/count_pure>0.5  and (max_H_upper/(max-min)>0.35 or max_H_down/(max-min)>0.35):
                 line_range=range_1
 
         if line_range is not None:
@@ -95,9 +95,9 @@ def remove_underline_help(img,max,min):
                     if (img[line_range[0]-1 , i+1]==255) and img[line_range[1]+1 , i-1]==255 :
                         continue
 
-                    img[line_range[0]:line_range[1] , i]=0
+                    img[line_range[0]:line_range[1]+1 , i]=0
                 except:
-                    img[line_range[0]:line_range[1] , i-1]=0
+                    img[line_range[0]:line_range[1]+1 , i-1]=0
 
     return img
 

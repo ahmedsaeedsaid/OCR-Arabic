@@ -35,6 +35,7 @@ def contour_extraction(img):
     empty_image =np.zeros(image.shape, np.uint8)
     counter_image = cv2.drawContours(empty_image, [counter], 0, (255, 255), 0)
     counter=counter[:,0]
+    #cv2.imwrite('result_image/a'+str(counter.shape)+'.jpg',counter_image)
     return (counter_image,counter)
 
 def up_contour(img_contour,contour,pen):
@@ -85,6 +86,7 @@ def up_contour(img_contour,contour,pen):
     start_point=(start_point_x,start_point_y)
     end_point=(end_point_x,end_point_y)
     img_upcontour=crop_two_point(img_contour,start_point,end_point)
+    #cv2.imwrite('result_image/a'+str(img_upcontour.shape)+'.jpg',img_upcontour)
     return (img_upcontour,start_point,end_point)
 
 def crop_two_point(image,start_point,end_point):
@@ -195,11 +197,13 @@ def seperated_region_area(image,start_point,end_point):
         temp_image[start_point_char[0],start_point_char[1]+1]=0
         temp_image[start_point_char[0]-1,start_point_char[1]+1]=0
         char=crop_two_point(temp_image,start_point_char,end_point_char)
+        #cv2.imwrite('result_image/upchar'+str(char.shape)+'.jpg',char)
         chars.append((char,start_point_char,end_point_char))
         prev_region=curr_region
 
     if end_point[1]<prev_region[0][1]-1:
         char=crop_two_point(image,end_point,prev_region[1])
+        #cv2.imwrite('result_image/upchar'+str(char.shape)+'.jpg',char)
         chars.append((char,prev_region[1],end_point))
     return (chars,baseline)
 
@@ -262,7 +266,11 @@ def cut_original_sub_word(image,upgrade_image,contour_image,chars):
             temp_contour_image=contour_image.copy()
             temp_contour_image[:,end_point_down[1]-1]=0
             temp_contour_image[:,start_point_down[1]+1]=0
+
+            cv2.imwrite('result_image/temp_contour_image'+str(end_point_down)+'.jpg',temp_contour_image)
+
             down_contour=crop_two_point(temp_contour_image,end_point_down,start_point_down)
+
 
             marge_two_image(contour_char,down_contour)
 
@@ -430,6 +438,7 @@ def calculate_part_height(upgrade_char,x1,x2,index,baseline,pen,size):
                 test_image[baseline,:]=255
                 test_image[i,:]=255
                 return baseline-i
+    return 0
 
 def get_number_of_dotted(char,upgrade_char):
     dotted_image=np.zeros(char.shape)
@@ -454,6 +463,7 @@ def character_satisfied(char,upgrade_char,x1,x2,pen,index,baseline,size):
     found_hamza=check_hamza(char,upgrade_char)
     height=calculate_part_height(upgrade_char,x1,x2,index,baseline,pen,size)
     number_of_dotted, _ =get_number_of_dotted(char,upgrade_char)
+
     if not found_hole and number_of_dotted==0 and (height < 2 * pen) and not found_hamza:
         return True
     return False
@@ -482,6 +492,3 @@ def check_sheen(part1,part2,pen,index,baseline,size):
                     return True
 
     return False
-
-
-
