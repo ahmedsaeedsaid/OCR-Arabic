@@ -1,6 +1,6 @@
 from segmentation import *
 
-img_clean=pre_processing('test_image/test_11.jpg')
+img_clean=pre_processing('test_image/test_13.jpg')
 pages_split=page_segmentation(img_clean)
 words_parts=[]
 for page in pages_split :

@@ -128,12 +128,12 @@ def determination_image(img):
     separated_regions=separate_regions(Separation_indices,1)
     if len(separated_regions)>0:
         min=separated_regions[0][0]
-        max=separated_regions[0][1]
+        max=separated_regions[len(separated_regions)-1][1]
         img_process=img_process[min:max+1,:]
     Separation_indices=separation_indices(V_proj)
     separated_regions=separate_regions(Separation_indices,1)
     if len(separated_regions)>0:
         min=separated_regions[0][0]
-        max=separated_regions[0][1]
+        max=separated_regions[len(separated_regions)-1][1]
         img_process=img_process[:,min:max+1]
     return img_process

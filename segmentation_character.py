@@ -267,7 +267,7 @@ def cut_original_sub_word(image,upgrade_image,contour_image,chars):
             temp_contour_image[:,end_point_down[1]-1]=0
             temp_contour_image[:,start_point_down[1]+1]=0
 
-            cv2.imwrite('result_image/temp_contour_image'+str(end_point_down)+'.jpg',temp_contour_image)
+            #cv2.imwrite('result_image/temp_contour_image'+str(end_point_down)+'.jpg',temp_contour_image)
 
             down_contour=crop_two_point(temp_contour_image,end_point_down,start_point_down)
 
@@ -364,14 +364,13 @@ def check_one_dotted(img):
         cnt = contours[0]
         convex_hull_area=cv2.contourArea(cnt)
         if shape_area/convex_hull_area>0.8:
-
             point_of_center_point=(int(img.shape[0]/2),int(img.shape[1]/2))
             controid=[img.item(point_of_center_point[0]-1,point_of_center_point[1])==255,img.item(point_of_center_point[0]+1,point_of_center_point[1])==255,img.item(point_of_center_point[0],point_of_center_point[1]-1)==255,img.item(point_of_center_point[0],point_of_center_point[1]+1)==255]
             num_of_true=0
             for flag in controid:
                 if flag:
                     num_of_true+=1
-            if num_of_true>2:
+            if num_of_true>=2:
 
                 minor_axis_length=0
                 major_axis_length=0
@@ -448,7 +447,9 @@ def get_number_of_dotted(char,upgrade_char):
     diacritics_image = np.uint8(diacritics_image)
     number_of_diacritic, labels_of_diacritics = cv2.connectedComponents(diacritics_image,connectivity=8)
     number_of_dotted=0
+
     for i in range(1,number_of_diacritic):
+
         component=filtering_component(diacritics_image,labels_of_diacritics,i)
         determinate_component=determination_image(component)
         number= check_dotted(determinate_component)
@@ -463,7 +464,6 @@ def character_satisfied(char,upgrade_char,x1,x2,pen,index,baseline,size):
     found_hamza=check_hamza(char,upgrade_char)
     height=calculate_part_height(upgrade_char,x1,x2,index,baseline,pen,size)
     number_of_dotted, _ =get_number_of_dotted(char,upgrade_char)
-
     if not found_hole and number_of_dotted==0 and (height < 2 * pen) and not found_hamza:
         return True
     return False

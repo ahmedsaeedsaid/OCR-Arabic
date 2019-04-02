@@ -45,7 +45,7 @@ def column_segmentation(img):
 
             if (separated_regions[i][1]-separated_regions[i][0])<threshold:
 
-                if i==(len(separated_regions)-1) or (i != 0 and (separated_regions[i][0]-separated_regions[i-1][1]) <(separated_regions[i+1][0]-separated_regions[i][1])):
+                if (i==(len(separated_regions)-1) or (i != 0 and (separated_regions[i][0]-separated_regions[i-1][1]) <(separated_regions[i+1][0]-separated_regions[i][1]))) and len(new_separated_regions)>0:
                     new_separated_regions[len(new_separated_regions)-1]=(new_separated_regions[len(new_separated_regions)-1][0],separated_regions[i][1])
                 else:
                     separated_regions[i+1]=(separated_regions[i][0],separated_regions[i+1][1])
@@ -106,10 +106,10 @@ def line_segmentation(img) :
     return lines
 
 def word_segmentation(img) :
-    cv2.imwrite('result_image/line.jpg',img)
+    #cv2.imwrite('result_image/line.jpg',img)
     #remove under line from image
     img = remove_underline(img)
-    cv2.imwrite('result_image/removed_line.jpg',img)
+    #cv2.imwrite('result_image/removed_line.jpg',img)
     # clear increases in line
     upgrade_image,baseline = clear_diacritics(img)
 
@@ -254,6 +254,7 @@ def char_segmentation(img,upgrade_img,pen,baseline):
         #cv2.imwrite('upgradeChar'+str(i)+'.jpg',chars[i].upgradeChar)
         #cv2.imwrite('upContourChar'+str(i)+'.jpg',chars[i].upContourChar)
         if chars[i].startPoint[0]<baseline-pen and i!=0:
+
             temp_image=chars[i].upgradeChar.copy()
             marge_two_image(temp_image,chars[i-1].upgradeChar)
             if check_hole_found(temp_image) and not check_hole_found(chars[i-1].upgradeChar):
@@ -274,8 +275,7 @@ def char_segmentation(img,upgrade_img,pen,baseline):
                 space_counter+=1
         else:
             if i == len_chars-1:
-
-                if chars[i].startPoint[0]>baseline+pen:
+                if chars[i].startPoint[0]>=baseline+pen:
                     chars[i-1].ignore=True
                     if check_sheen(chars[i-2],chars[i-3],pen,i,baseline,len_chars):
                         chars[i-2].ignore=True
@@ -290,7 +290,13 @@ def char_segmentation(img,upgrade_img,pen,baseline):
                             chars[i-3].ignore=False
                         space_counter=0
                 else:
+
                     if space_counter==3:
+                        chars[i-2].ignore=True
+                        chars[i-3].ignore=True
+                        space_counter=0
+                    elif space_counter==2:
+
                         chars[i-2].ignore=True
                         chars[i-3].ignore=True
                         space_counter=0
@@ -314,6 +320,10 @@ def char_segmentation(img,upgrade_img,pen,baseline):
                 if (i>2):
                     chars[i-3].ignore=False
                 space_counter=0
+            elif space_counter==2:
+                chars[i-2].ignore=True
+                chars[i-3].ignore=True
+                space_counter=0
             elif space_counter>3:
                 count=0
                 for k in range(0,int((space_counter-1)/3)):
@@ -330,10 +340,10 @@ def char_segmentation(img,upgrade_img,pen,baseline):
             marge_two_image(chars[i+1].char,chars[i].char)
             marge_two_image(chars[i+1].upgradeChar,chars[i].upgradeChar)
 
-
+    reChars=[]
     for i in range(len_chars):
         if not chars[i].ignore:
-            cv2.imwrite('result_image/char'+str(i)+'.jpg',chars[i].char)
-            #chars.append((determination_image(chars[i].char),determination_image(chars[i].upgradeChar)))
+            cv2.imwrite('result_image/char'+str(i)+'.jpg',determination_image(chars[i].char))
+            reChars.append((determination_image(chars[i].char),determination_image(chars[i].upgradeChar)))
             continue
-    return chars
+    return reChars
