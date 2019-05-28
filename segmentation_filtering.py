@@ -125,15 +125,18 @@ def determination_image(img):
     V_proj=vertical_projection(img_process)
     H_proj=horizontal_projection(img_process)
     Separation_indices=separation_indices(H_proj)
-    separated_regions=separate_regions(Separation_indices,1)
-    if len(separated_regions)>0:
-        min=separated_regions[0][0]
-        max=separated_regions[len(separated_regions)-1][1]
-        img_process=img_process[min:max+1,:]
+    if len(Separation_indices)>0:
+        separated_regions=separate_regions(Separation_indices,1)
+        if len(separated_regions)>0:
+            min=separated_regions[0][0]
+            max=separated_regions[len(separated_regions)-1][1]
+            img_process=img_process[min:max+1,:]
+
     Separation_indices=separation_indices(V_proj)
-    separated_regions=separate_regions(Separation_indices,1)
-    if len(separated_regions)>0:
-        min=separated_regions[0][0]
-        max=separated_regions[len(separated_regions)-1][1]
-        img_process=img_process[:,min:max+1]
+    if len(Separation_indices)>0:
+        separated_regions=separate_regions(Separation_indices,1)
+        if len(separated_regions)>0:
+            min=separated_regions[0][0]
+            max=separated_regions[len(separated_regions)-1][1]
+            img_process=img_process[:,min:max+1]
     return img_process
