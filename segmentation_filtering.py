@@ -121,22 +121,33 @@ def filtering_component(img,labels,label):
     return img_process
 
 def determination_image(img):
-    img_process=np.copy(img)
-    V_proj=vertical_projection(img_process)
-    H_proj=horizontal_projection(img_process)
-    Separation_indices=separation_indices(H_proj)
-    if len(Separation_indices)>0:
-        separated_regions=separate_regions(Separation_indices,1)
-        if len(separated_regions)>0:
-            min=separated_regions[0][0]
-            max=separated_regions[len(separated_regions)-1][1]
-            img_process=img_process[min:max+1,:]
 
-    Separation_indices=separation_indices(V_proj)
-    if len(Separation_indices)>0:
-        separated_regions=separate_regions(Separation_indices,1)
-        if len(separated_regions)>0:
-            min=separated_regions[0][0]
-            max=separated_regions[len(separated_regions)-1][1]
-            img_process=img_process[:,min:max+1]
+    img_process=np.copy(img)
+    row_start=0
+    row_end=img_process.shape[0]-1
+    column_start=0
+    column_end=img_process.shape[1]-1
+    first_founded=False
+    for i in np.arange(img_process.shape[0]):
+        for j in np.arange(img_process.shape[1]):
+            if img_process[i][j]==255:
+                if first_founded:
+                    row_end=i
+                else:
+                    row_start=i
+                    row_end=i
+                    first_founded=True
+    first_founded=False
+    for i in np.arange(img_process.shape[1]):
+        for j in np.arange(img_process.shape[0]):
+            if img_process[j][i]==255:
+                if first_founded:
+                    column_end=i
+                else:
+                    column_start=i
+                    column_end=i
+                    first_founded=True
+                continue
+
+    img_process=img_process[row_start:row_end+2,column_start:column_end+2]
     return img_process

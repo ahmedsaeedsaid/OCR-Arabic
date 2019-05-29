@@ -7,7 +7,8 @@ charCount=0
 allwordchars=[]
 alllines=[]
 linechars=0
-img_clean=pre_processing('test_image/test_13.jpg')
+index=0
+img_clean=pre_processing ('test_image/test_19.jpg')
 
 # preprocessing stage
 pages_split=page_segmentation(img_clean)
@@ -31,12 +32,12 @@ for page in pages_split :
                 allwordchars.append(charCount)
                 charCount=0
                 for part in word_parts:
-                    chars=char_segmentation(part[0],part[1],pen,baseline)
+                    index+=1
+                    chars=char_segmentation(part[0],part[1],pen,baseline,index)
                     charCount=charCount+len(chars)
                     linechars = linechars+len(chars)
                     for char in chars:
                         all_chars.append(char[0])
-
 # pattern stage
 combine_text(allwordchars,all_chars,alllines)
 

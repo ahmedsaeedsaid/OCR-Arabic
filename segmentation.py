@@ -237,13 +237,20 @@ def sub_word_segmentation(img,upgrade_img):
         #cv2.imwrite('result_image/part'+str(img.shape[0]+img.shape[1]+i)+'.jpg',sub_words[i-1][1])
     return sub_words
 
-def char_segmentation(img,upgrade_img,pen,baseline):
+def char_segmentation(img,upgrade_img,pen,baseline,index):
     img = increase_shape(img,2)
     upgrade_img = increase_shape(upgrade_img,2)
     contour_image,contour = contour_extraction(upgrade_img)
     image,start_point,end_point = up_contour(contour_image,contour,pen)
+    if len(image) == 0 :
+        return [(img,upgrade_img)]
+
     up_contour_chars, _ = seperated_region_area(image,start_point,end_point)
+
+
     output_chars = cut_original_sub_word(img,upgrade_img,contour_image,up_contour_chars)
+
+
     chars = formation_char_data(output_chars,up_contour_chars)
 
 
@@ -347,3 +354,4 @@ def char_segmentation(img,upgrade_img,pen,baseline):
             reChars.append((determination_image(chars[i].char),determination_image(chars[i].upgradeChar)))
             continue
     return reChars
+

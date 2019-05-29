@@ -6,7 +6,7 @@ def combine_text(allwordchars,chars,alllines):
     real_chars=["ع","ح","ا","ب","ض","د","ف","غ","ه","ء","ئ","ج","ك","خ","ل","لا","م","ن","ق","ر","ص","ش","س","ت","ة","ط","ث","و","ي","ظ","ذ","ز"]
     text = " "
     char_resized = []
-
+    chars.reverse()
     for char in chars:
         char_resized.append(cv2.resize(char,(16, 16)))
 

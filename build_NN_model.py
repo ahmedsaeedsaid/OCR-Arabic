@@ -65,7 +65,7 @@ model.add(Dense(32, activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.summary()
 
-history=model.fit(X_train, y_train, epochs=150, batch_size=256,validation_split=0.25)
+history=model.fit(X_train, y_train, epochs=250, batch_size=256,validation_split=0.2)
 # serialize model to JSON
 model.save('models/NN_Model_2.h5')
 model_json = model.to_json()

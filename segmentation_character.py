@@ -42,9 +42,11 @@ def up_contour(img_contour,contour,pen):
 
     # get counter first and last part
     contour_columns_indeces=contour[:,0]
+
     TV =pen
     column_1=max(contour_columns_indeces)
     column_2=column_1-TV
+
     CFP=[]
     CLP=[]
     for point in contour :
@@ -56,6 +58,8 @@ def up_contour(img_contour,contour,pen):
             CLP.append(point)
     CFP=np.array(CFP)
     CLP=np.array(CLP)
+    if len(CLP) == 0:
+        return ([],(),())
 
     # get start point
     row_indces=np.unique(CFP[:,1])
@@ -183,6 +187,8 @@ def seperated_region_area(image,start_point,end_point):
         if flag:
             continuous_region_areas_temp.append(continuous_region_areas[i])
     continuous_region_areas=continuous_region_areas_temp
+
+
 
     # cut all chars
     prev_region=continuous_region_areas[0]
