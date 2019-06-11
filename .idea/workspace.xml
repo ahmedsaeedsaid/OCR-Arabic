@@ -6,21 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="2818c6e4-6020-4f8a-9f29-e2ebb6c695fd" name="Default" comment="Edit remove underline">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arabic.csv" beforeDir="false" afterPath="$PROJECT_DIR$/arabic.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_NN_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_NN_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pattern_stage/visulize/model loss.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pattern_stage/visulize/model loss.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/pre_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_image/Result_image_clean.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/Result_image_clean.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_image/char0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_image/char2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_image/char4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/Result_image_clean.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/segmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/segmentation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/segmentation_character.py" beforeDir="false" afterPath="$PROJECT_DIR$/segmentation_character.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_NN_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_NN_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_image/test_17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/test_image/test_17.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text_combine.py" beforeDir="false" afterPath="$PROJECT_DIR$/text_combine.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="216">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -42,11 +48,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/segmentation_character.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="29" column="54" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="54" />
+            <state relative-caret-position="176">
+              <caret line="524" column="16" selection-start-line="524" selection-start-column="16" selection-end-line="524" selection-end-column="16" />
               <folding>
+                <element signature="e#374#1420#0" />
                 <element signature="e#1468#3113#0" />
-                <element signature="e#4005#9013#0" />
                 <element signature="e#9030#13761#0" />
                 <element signature="e#13813#14008#0" />
                 <element signature="e#14044#14394#0" />
@@ -101,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/segmentation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="234" column="72" selection-start-line="234" selection-start-column="72" selection-end-line="234" selection-end-column="72" />
+            <state relative-caret-position="28">
+              <caret line="347" column="27" selection-start-line="347" selection-start-column="27" selection-end-line="347" selection-end-column="27" />
               <folding>
                 <element signature="e#71#795#0" />
                 <element signature="e#832#2502#0" />
@@ -135,8 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/segmentation_filtering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="234">
+              <caret line="153" selection-start-line="153" selection-end-line="153" />
               <folding>
                 <element signature="e#70#1017#0" />
                 <element signature="e#1050#1597#0" />
@@ -160,7 +166,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>contour_extraction</find>
       <find>calculate_part_height</find>
       <find>cv2.imwrite</find>
       <find>separate_regions</find>
@@ -187,9 +192,10 @@
       <find>from pre_processing import *</find>
       <find>linechars</find>
       <find>determination_image</find>
-      <find>print</find>
       <find>cv2.</find>
       <find>cv2.im</find>
+      <find>print</find>
+      <find>cut_original_sub_word</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,7 +217,6 @@
         <option value="$PROJECT_DIR$/load_mat_file_NN.py" />
         <option value="$PROJECT_DIR$/transform_text.py" />
         <option value="$PROJECT_DIR$/transform_to_text.py" />
-        <option value="$PROJECT_DIR$/segmentation_filtering.py" />
         <option value="$PROJECT_DIR$/predict_NN.py" />
         <option value="$PROJECT_DIR$/pre_processing_helps.py" />
         <option value="$PROJECT_DIR$/test.py" />
@@ -221,13 +226,14 @@
         <option value="$PROJECT_DIR$/test_NN_model.py" />
         <option value="$PROJECT_DIR$/segmentation_algorithms.py" />
         <option value="$PROJECT_DIR$/text_combine.py" />
+        <option value="$PROJECT_DIR$/segmentation_filtering.py" />
+        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/segmentation_character.py" />
         <option value="$PROJECT_DIR$/segmentation.py" />
-        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="617" />
     <option name="width" value="758" />
     <option name="height" value="728" />
@@ -539,51 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pre_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="98" column="48" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="48" />
-          <folding>
-            <element signature="e#30#40#0" expanded="true" />
-            <element signature="e#148#1393#0" />
-            <element signature="e#1449#1842#0" />
-            <element signature="e#1872#1980#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/segmentation_character.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="29" column="54" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="54" />
-          <folding>
-            <element signature="e#1468#3113#0" />
-            <element signature="e#4005#9013#0" />
-            <element signature="e#9030#13761#0" />
-            <element signature="e#13813#14008#0" />
-            <element signature="e#14044#14394#0" />
-            <element signature="e#14427#15874#0" />
-            <element signature="e#15903#16205#0" />
-            <element signature="e#15897#16609#0" />
-            <element signature="e#16247#17137#0" />
-            <element signature="e#17984#18412#0" />
-            <element signature="e#18487#18844#0" />
-            <element signature="e#18904#20036#0" />
-            <element signature="e#19667#20018#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text_combine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/segmentation_algorithms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -608,24 +569,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/segmentation.py">
+    <entry file="file://$PROJECT_DIR$/text_combine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="234" column="72" selection-start-line="234" selection-start-column="72" selection-end-line="234" selection-end-column="72" />
+        <state relative-caret-position="64">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
           <folding>
-            <element signature="e#71#795#0" />
-            <element signature="e#832#2502#0" />
-            <element signature="e#2538#4034#0" />
-            <element signature="e#4069#5571#0" />
-            <element signature="e#5638#6541#0" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/segmentation_filtering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="234">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
           <folding>
             <element signature="e#70#1017#0" />
             <element signature="e#1050#1597#0" />
@@ -637,10 +601,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/pre_processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="557">
+          <caret line="98" column="48" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="48" />
+          <folding>
+            <element signature="e#30#40#0" expanded="true" />
+            <element signature="e#148#1393#0" />
+            <element signature="e#1449#1842#0" />
+            <element signature="e#1872#1980#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation_character.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="524" column="16" selection-start-line="524" selection-start-column="16" selection-end-line="524" selection-end-column="16" />
+          <folding>
+            <element signature="e#374#1420#0" />
+            <element signature="e#1468#3113#0" />
+            <element signature="e#9030#13761#0" />
+            <element signature="e#13813#14008#0" />
+            <element signature="e#14044#14394#0" />
+            <element signature="e#14427#15874#0" />
+            <element signature="e#15903#16205#0" />
+            <element signature="e#15897#16609#0" />
+            <element signature="e#16247#17137#0" />
+            <element signature="e#17984#18412#0" />
+            <element signature="e#18487#18844#0" />
+            <element signature="e#18904#20036#0" />
+            <element signature="e#19667#20018#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="347" column="27" selection-start-line="347" selection-start-column="27" selection-end-line="347" selection-end-column="27" />
+          <folding>
+            <element signature="e#71#795#0" />
+            <element signature="e#832#2502#0" />
+            <element signature="e#2538#4034#0" />
+            <element signature="e#4069#5571#0" />
+            <element signature="e#5638#6541#0" />
+          </folding>
         </state>
       </provider>
     </entry>

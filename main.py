@@ -1,4 +1,5 @@
 from text_combine import *
+#from segmentation import *
 
 
 all_chars = []
@@ -9,7 +10,7 @@ linechars=0
 allwordsparts=[]
 allwordspartslens=[]
 index=0
-img_clean=pre_processing ('test_image/test_15.jpg')
+img_clean=pre_processing ('test_image/test_20.jpg')
 
 # preprocessing stage
 pages_split=page_segmentation(img_clean)
@@ -46,7 +47,10 @@ for page in pages_split :
                 charCount=0
 
 
-
+i=0
+for char in all_chars :
+    cv2.imwrite('result_image/char_'+str(i)+'.jpg',char)
+    i+=1
 # pattern stage
 combine_text(allwordchars,all_chars,alllines,allwordsparts,allwordspartslens)
 

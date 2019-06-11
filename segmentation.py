@@ -239,9 +239,9 @@ def char_segmentation(img,upgrade_img,pen,baseline,index):
 
     up_contour_chars, _ = seperated_region_area(image,start_point,end_point)
 
-    i=0
+
     output_chars = cut_original_sub_word(img,upgrade_img,contour_image,up_contour_chars)
-    i=0
+
 
     chars = formation_char_data(output_chars,up_contour_chars)
 
@@ -344,8 +344,18 @@ def char_segmentation(img,upgrade_img,pen,baseline,index):
         countwhite= calculate_number_white_pixels(chars[i].upgradeChar)
         size = chars[i].char.shape[0] * chars[i].char.shape[1]
         if not chars[i].ignore and countwhite!=0 and size > 4:
-            reChars.append((determination_image(chars[i].char),determination_image(chars[i].upgradeChar)))
-            continue
+            #overSeg_chars=overcheck_yaa(chars[i].char,chars[i].upgradeChar,baseline,pen)
+            overSeg_chars=[]
+            if len(overSeg_chars)==0:
+                reChars.append((determination_image(chars[i].char),determination_image(chars[i].upgradeChar)))
+                continue
+            else:
+                for overSeg_char in overSeg_chars:
+                    countwhite= calculate_number_white_pixels(overSeg_char[1])
+                    size = overSeg_char[0].shape[0] * overSeg_char[0].shape[1]
+                    if  countwhite!=0 and size > 4:
+                        reChars.append((determination_image(overSeg_char[0]),determination_image(overSeg_char[1])))
+                continue
     if len(reChars)==0:
         reChars.append((determination_image(img),determination_image(upgrade_img)))
     return reChars

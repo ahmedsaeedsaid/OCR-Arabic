@@ -496,3 +496,35 @@ def check_sheen(part1,part2,pen,index,baseline,size):
                     return True
 
     return False
+
+def overcheck_yaa(char,upgrade_char,baseline,pen):
+    upgrade_img = increase_shape(upgrade_char,2)
+    contour_image,contour = contour_extraction(upgrade_img)
+    image,start_point,end_point = up_contour(contour_image,contour,pen+2)
+    if len(image) == 0 :
+        return [(char,upgrade_char)]
+
+
+    continuous_regions=[]
+    for i in np.arange(image.shape[0]):
+        continuous_region=[]
+        for j in np.arange(image.shape[1]):
+            if image.item(i,j)==255:
+                continuous_region.append((i,j))
+            elif len(continuous_region)>0:
+                continuous_regions.append(continuous_region)
+                continuous_region=[]
+            else:
+                continuous_region=[]
+    max=-1
+    for continuous_region in continuous_regions:
+        size_continuous_region=len(continuous_region)
+        if max<len(continuous_region):
+            max_continuous_region_areas=(continuous_region[0],continuous_region[size_continuous_region-1])
+            max= len(continuous_region)
+    if max>pen*2 and abs(max_continuous_region_areas[0][0]-baseline)<=2:
+        output_chars = [(char[:,:max_continuous_region_areas[0][1]],upgrade_char[:,:max_continuous_region_areas[0][0]]),(char[:,max_continuous_region_areas[0][0]:],upgrade_char[:,max_continuous_region_areas[0][0]:])]
+
+        return output_chars
+
+    return []
