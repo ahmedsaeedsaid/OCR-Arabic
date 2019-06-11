@@ -1,12 +1,18 @@
-from sklearn import preprocessing
-from sklearn.model_selection import train_test_split
+import os
+from pre_processing import *
 import pandas as pd
-from segmentation import *
-url='dataset/thaa/iAndalus_30 size5.jpg'
-image=cv2.imread(url,0)
+directory_list = list()
+Y=[]
+X=[]
+for root, dirs, files in os.walk("punctuation marks", topdown=False):
 
-ret2,img_clean = cv2.threshold(image,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
+    for dir_name in dirs:
+        url='punctuation marks/'+dir_name+'/'
+        for file_name in os.listdir(url):
+            Y.append(dir_name)
+            X.append('dataset/'+dir_name+'/'+file_name)
 
-img_clean = determination_image(img_clean)
+dic={'class':Y,'image':X}
+df=pd.DataFrame.from_dict(dic)
+df.to_csv('arabic_punctuation.csv', index=False)
 
-cv2.imwrite('result_image/test.jpg',img_clean)

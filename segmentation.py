@@ -18,7 +18,6 @@ def page_segmentation(img):
             min=separated_regions[i][0]
             max=separated_regions[i][1]
             page_columns.append(img[: , min:max])
-            #cv2.imwrite('result_image/page_segmanted'+str(i)+'.jpg',img[: , min:max])
 
     else:
         page_columns=[img]
@@ -55,7 +54,6 @@ def column_segmentation(img):
 
         for separated_region in separated_regions:
             columns.append(img[separated_region[0]:separated_region[1],:])
-            #cv2.imwrite('result_image/column_segmanted'+str(img.shape[0]+img.shape[1]+separated_region[0]+separated_region[1])+'.jpg',img[separated_region[0]:separated_region[1],:])
     else:
         columns=[img]
     return columns
@@ -101,15 +99,12 @@ def line_segmentation(img) :
     for i in range(number_of_line):
         if img.shape[0]>=height_line+start :
             lines.append(img[start:height_line+start , :])
-            #cv2.imwrite('result_image/line_segmanted'+str(img.shape[0]+img.shape[1]+start+height_line+i)+'.jpg',img[start:height_line+start , :])
             start+=height_line
     return lines
 
 def word_segmentation(img) :
-    #cv2.imwrite('result_image/line.jpg',img)
     #remove under line from image
     img = remove_underline(img)
-    #cv2.imwrite('result_image/removed_line.jpg',img)
     # clear increases in line
     upgrade_image,baseline = clear_diacritics(img)
 
@@ -131,7 +126,6 @@ def word_segmentation(img) :
             current_pen=pen_size(upgrade_image[: , current_part[0]:current_part[1]])
             if (current_part[0]-pre_part[1])>((pre_pen+current_pen)/2) :
                 words.append((img[: ,  word[0]:word[1]],upgrade_image[: , word[0]:word[1]]))
-                #cv2.imwrite('result_image/word_segmanted'+str(img.shape[0]+img.shape[1]+word[0]+word[1]+i)+'.jpg',upgrade_image[: , word[0]:word[1]])
                 word=current_part
             else:
                 word=(word[0],current_part[1])
@@ -164,7 +158,6 @@ def word_segmentation_V2(img,threshold_word_segmentation) :
         for i in range(len(separated_regions)):
             min=separated_regions[i][0]
             max=separated_regions[i][1]
-            #cv2.imwrite('result_image/word_segmanted'+str(img.shape[0]+img.shape[1]+min+max+i)+'.jpg',upgrade_image[: , min:max+2])
             words.append((img[: , min:max],upgrade_image[: , min:max]))
     else:
         words=[(img,upgrade_image)]
@@ -232,34 +225,34 @@ def sub_word_segmentation(img,upgrade_img):
             separated_regions=separate_regions(Separation_indices,1)
             sub_words.append((parts_dir[i-1][:,separated_regions[0][0]:separated_regions[0][1]+2],parts[i-1][:,separated_regions[0][0]:separated_regions[0][1]+2]))
 
-    #for i in range(1,number_of_sub_words):
-        #cv2.imwrite('result_image/part'+str(img.shape[0]+img.shape[1]+i)+'00.jpg',sub_words[i-1][0])
-        #cv2.imwrite('result_image/part'+str(img.shape[0]+img.shape[1]+i)+'.jpg',sub_words[i-1][1])
+
     return sub_words
 
 def char_segmentation(img,upgrade_img,pen,baseline,index):
     img = increase_shape(img,2)
     upgrade_img = increase_shape(upgrade_img,2)
     contour_image,contour = contour_extraction(upgrade_img)
-    image,start_point,end_point = up_contour(contour_image,contour,pen)
+    image,start_point,end_point = up_contour(contour_image,contour,pen+2)
     if len(image) == 0 :
-        return [(img,upgrade_img)]
+
+        return [(determination_image(img),determination_image(upgrade_img))]
 
     up_contour_chars, _ = seperated_region_area(image,start_point,end_point)
 
-
+    i=0
     output_chars = cut_original_sub_word(img,upgrade_img,contour_image,up_contour_chars)
-
+    i=0
 
     chars = formation_char_data(output_chars,up_contour_chars)
+
+    # post precessing
 
 
     space_counter=0
     len_chars=len(chars)
     for i in range(len_chars):
-        #cv2.imwrite('chars'+str(i)+'.jpg',chars[i].char)
-        #cv2.imwrite('upgradeChar'+str(i)+'.jpg',chars[i].upgradeChar)
-        #cv2.imwrite('upContourChar'+str(i)+'.jpg',chars[i].upContourChar)
+
+
         if chars[i].startPoint[0]<baseline-pen and i!=0:
 
             temp_image=chars[i].upgradeChar.copy()
@@ -268,11 +261,11 @@ def char_segmentation(img,upgrade_img,pen,baseline,index):
                 chars[i-1].ignore=True
                 if (i>1):
                     chars[i-2].ignore=False
+
             space_counter=0
 
         elif character_satisfied(chars[i].char,chars[i].upgradeChar,chars[i].startPoint[0],chars[i].endPoint[0],pen,i,baseline,len_chars) and i!=len_chars-1:
             if i>=2 and check_sheen(chars[i-1],chars[i-2],pen,i,baseline,len_chars):
-
                 chars[i-1].ignore=True
                 chars[i-2].ignore=True
                 if i>2:
@@ -281,21 +274,20 @@ def char_segmentation(img,upgrade_img,pen,baseline,index):
             else:
                 space_counter+=1
         else:
+
             if i == len_chars-1:
-                if chars[i].startPoint[0]>=baseline+pen:
+                if chars[i].startPoint[0]>baseline+pen or character_satisfied(chars[i].char,chars[i].upgradeChar,chars[i].startPoint[0],chars[i].endPoint[0],pen,i,baseline,len_chars):
                     chars[i-1].ignore=True
-                    if check_sheen(chars[i-2],chars[i-3],pen,i,baseline,len_chars):
+                    if i>=3 and check_sheen(chars[i-2],chars[i-3],pen,i,baseline,len_chars):
                         chars[i-2].ignore=True
                         chars[i-3].ignore=True
                     elif space_counter==2:
                         chars[i-2].ignore=True
                         chars[i-3].ignore=True
-                        space_counter=0
                     elif space_counter==1:
                         chars[i-2].ignore=True
                         if (i>2):
                             chars[i-3].ignore=False
-                        space_counter=0
                 else:
 
                     if space_counter==3:
@@ -349,9 +341,13 @@ def char_segmentation(img,upgrade_img,pen,baseline,index):
 
     reChars=[]
     for i in range(len_chars):
-        if not chars[i].ignore:
-            cv2.imwrite('result_image/char'+str(i)+'.jpg',determination_image(chars[i].char))
+        countwhite= calculate_number_white_pixels(chars[i].upgradeChar)
+        size = chars[i].char.shape[0] * chars[i].char.shape[1]
+        if not chars[i].ignore and countwhite!=0 and size > 4:
             reChars.append((determination_image(chars[i].char),determination_image(chars[i].upgradeChar)))
             continue
+    if len(reChars)==0:
+        reChars.append((determination_image(img),determination_image(upgrade_img)))
     return reChars
+
 

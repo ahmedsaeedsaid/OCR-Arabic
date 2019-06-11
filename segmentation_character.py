@@ -35,7 +35,6 @@ def contour_extraction(img):
     empty_image =np.zeros(image.shape, np.uint8)
     counter_image = cv2.drawContours(empty_image, [counter], 0, (255, 255), 0)
     counter=counter[:,0]
-    #cv2.imwrite('result_image/a'+str(counter.shape)+'.jpg',counter_image)
     return (counter_image,counter)
 
 def up_contour(img_contour,contour,pen):
@@ -90,7 +89,6 @@ def up_contour(img_contour,contour,pen):
     start_point=(start_point_x,start_point_y)
     end_point=(end_point_x,end_point_y)
     img_upcontour=crop_two_point(img_contour,start_point,end_point)
-    #cv2.imwrite('result_image/a'+str(img_upcontour.shape)+'.jpg',img_upcontour)
     return (img_upcontour,start_point,end_point)
 
 def crop_two_point(image,start_point,end_point):
@@ -98,9 +96,11 @@ def crop_two_point(image,start_point,end_point):
     result[start_point[0],start_point[1]]=255
     point_counter=start_point
     visited=[start_point]
+    counter_invert_dir=1
     while (point_counter!=end_point):
         all_pos_points=points_clockwise_diraction(point_counter)
         flag=False
+
         for point in all_pos_points:
                 if image.item(point[0],point[1])==255 and not (point in visited):
                     result[point[0],point[1]]=255
@@ -109,7 +109,11 @@ def crop_two_point(image,start_point,end_point):
                     visited.append(point)
                     break
         if not flag:
-            point_counter=visited[len(visited)-3]
+            result[point_counter[0],point_counter[1]]=0
+            point_counter=visited[len(visited)-counter_invert_dir]
+            counter_invert_dir+=1
+        else:
+            counter_invert_dir=1
 
     return result
 
@@ -188,28 +192,23 @@ def seperated_region_area(image,start_point,end_point):
             continuous_region_areas_temp.append(continuous_region_areas[i])
     continuous_region_areas=continuous_region_areas_temp
 
-
-
     # cut all chars
     prev_region=continuous_region_areas[0]
     char=crop_two_point(image,start_point,prev_region[0])
     chars=[(char,start_point,prev_region[0])]
     for i in range(1,len(continuous_region_areas)):
-
         curr_region=continuous_region_areas[i]
         end_point_char=curr_region[0]
         start_point_char=prev_region[1]
-        temp_image=image.copy()
-        temp_image[start_point_char[0],start_point_char[1]+1]=0
-        temp_image[start_point_char[0]-1,start_point_char[1]+1]=0
-        char=crop_two_point(temp_image,start_point_char,end_point_char)
-        #cv2.imwrite('result_image/upchar'+str(char.shape)+'.jpg',char)
+
+        char=crop_two_point(image,start_point_char,end_point_char)
+
         chars.append((char,start_point_char,end_point_char))
         prev_region=curr_region
 
+
     if end_point[1]<prev_region[0][1]-1:
         char=crop_two_point(image,end_point,prev_region[1])
-        #cv2.imwrite('result_image/upchar'+str(char.shape)+'.jpg',char)
         chars.append((char,prev_region[1],end_point))
     return (chars,baseline)
 
@@ -226,6 +225,10 @@ def cut_original_sub_word(image,upgrade_image,contour_image,chars):
         start_point_down=(0,0)
         end_point_down=(0,0)
         contour_char=np.copy(char)
+        temp_char=np.copy(char)
+        temp_char[start_point[0],:]=255
+        temp_char[:,start_point[1]]=255
+
 
         if k ==0:
             contour_char[:,end_point[1]:]=contour_image[:,end_point[1]:]
@@ -270,18 +273,12 @@ def cut_original_sub_word(image,upgrade_image,contour_image,chars):
                     break
             # add down counter for char
             temp_contour_image=contour_image.copy()
-            temp_contour_image[:,end_point_down[1]-1]=0
-            temp_contour_image[:,start_point_down[1]+1]=0
-
-            #cv2.imwrite('result_image/temp_contour_image'+str(end_point_down)+'.jpg',temp_contour_image)
 
             down_contour=crop_two_point(temp_contour_image,end_point_down,start_point_down)
-
 
             marge_two_image(contour_char,down_contour)
 
         # full holes in counter
-        #cv2.imwrite('contour_char'+str(k)+'.jpg',contour_char)
         binary_image=np.array([[1 if pixel == 255 else 0 for pixel in row ] for row in contour_char])
         binary_image= ndimage.binary_fill_holes(binary_image).astype(int)
 
@@ -337,8 +334,7 @@ def cut_original_sub_word(image,upgrade_image,contour_image,chars):
     output_chars=[]
 
     for i in range(len(clear_chars)):
-        #cv2.imwrite('clear_char'+str(i)+'.jpg',clear_chars[i])
-        #cv2.imwrite('char'+str(i)+'.jpg',clear_chars[i])
+
         output_chars.append((chars_dir[i],clear_chars[i]))
     return output_chars
 
@@ -403,6 +399,25 @@ def check_dotted(img):
         else:
             return 0
 
+def get_number_of_dotted(char,upgrade_char):
+    dotted_image=np.zeros(char.shape)
+    diacritics_image,found=filtering_diacritics(char,upgrade_char)
+    if not found:
+        return 0 , dotted_image
+    diacritics_image = np.uint8(diacritics_image)
+    number_of_diacritic, labels_of_diacritics = cv2.connectedComponents(diacritics_image,connectivity=8)
+    number_of_dotted=0
+
+    for i in range(1,number_of_diacritic):
+
+        component=filtering_component(diacritics_image,labels_of_diacritics,i)
+        determinate_component=determination_image(component)
+        number= check_dotted(determinate_component)
+        if number>0:
+            marge_two_image(dotted_image,component)
+        number_of_dotted+=number
+    return number_of_dotted,dotted_image
+
 def check_hamza(char,upgrade_char):
     diacritics_image,found=filtering_diacritics(char,upgrade_char)
     if not found:
@@ -430,39 +445,23 @@ def check_hamza(char,upgrade_char):
     return False
 
 def calculate_part_height(upgrade_char,x1,x2,index,baseline,pen,size):
-    if index==0 :
-        base = x2
-    else:
-        base = x1
+
     if index==size-2 and x2>baseline+pen:
         return pen * 3
-    test_image=upgrade_char.copy()
+    start=-1
+    end = -1
     for i in np.arange(upgrade_char.shape[0]):
         for j in np.arange(upgrade_char.shape[1]):
+
             if upgrade_char.item(i,j) == 255:
-                test_image[baseline,:]=255
-                test_image[i,:]=255
-                return baseline-i
-    return 0
-
-def get_number_of_dotted(char,upgrade_char):
-    dotted_image=np.zeros(char.shape)
-    diacritics_image,found=filtering_diacritics(char,upgrade_char)
-    if not found:
-        return 0 , dotted_image
-    diacritics_image = np.uint8(diacritics_image)
-    number_of_diacritic, labels_of_diacritics = cv2.connectedComponents(diacritics_image,connectivity=8)
-    number_of_dotted=0
-
-    for i in range(1,number_of_diacritic):
-
-        component=filtering_component(diacritics_image,labels_of_diacritics,i)
-        determinate_component=determination_image(component)
-        number= check_dotted(determinate_component)
-        if number>0:
-            marge_two_image(dotted_image,component)
-        number_of_dotted+=number
-    return number_of_dotted,dotted_image
+                if start==-1:
+                    start=i
+                else:
+                    end=i
+    if (end-start)>=pen*4:
+        return pen*3
+    else:
+        return baseline -start-1
 
 def character_satisfied(char,upgrade_char,x1,x2,pen,index,baseline,size):
 
@@ -470,7 +469,7 @@ def character_satisfied(char,upgrade_char,x1,x2,pen,index,baseline,size):
     found_hamza=check_hamza(char,upgrade_char)
     height=calculate_part_height(upgrade_char,x1,x2,index,baseline,pen,size)
     number_of_dotted, _ =get_number_of_dotted(char,upgrade_char)
-    if not found_hole and number_of_dotted==0 and (height < 2 * pen) and not found_hamza:
+    if not found_hole and number_of_dotted==0 and (height <= 2 * pen) and not found_hamza:
         return True
     return False
 
@@ -481,12 +480,11 @@ def check_sheen(part1,part2,pen,index,baseline,size):
     found_hole2=check_hole_found(part2.upgradeChar)
     height1=calculate_part_height(part1.upgradeChar,part1.startPoint[0],part1.endPoint[0],index,baseline,pen,size)
     height2=calculate_part_height(part2.upgradeChar,part2.startPoint[0],part2.endPoint[0],index,baseline,pen,size)
-
     if not found_hole1 and not found_hole2 and (height1 < 2 * pen) and (height2 < 2 * pen):
+
         marge_two_image(combine_char,part2.char)
         marge_two_image(combine_upgrade_char,part2.upgradeChar)
         number_of_dotted , dotted_image =get_number_of_dotted(combine_char,combine_upgrade_char)
-
         if number_of_dotted==3:
             dotted_image=determination_image(dotted_image)
             V_proj=vertical_projection(dotted_image)

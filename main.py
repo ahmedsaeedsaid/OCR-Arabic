@@ -1,14 +1,15 @@
 from text_combine import *
 
 
-
 all_chars = []
 charCount=0
 allwordchars=[]
 alllines=[]
 linechars=0
+allwordsparts=[]
+allwordspartslens=[]
 index=0
-img_clean=pre_processing ('test_image/test_19.jpg')
+img_clean=pre_processing ('test_image/test_15.jpg')
 
 # preprocessing stage
 pages_split=page_segmentation(img_clean)
@@ -24,22 +25,30 @@ for page in pages_split :
             linechars=0
             words,baseline=word_segmentation(line)
             for word in words :
+
                 word_parts=sub_word_segmentation(word[0],word[1])
                 words_parts.append(word_parts)
-
+                allwordsparts.append(len(word_parts))
             pen=mean_pens(words_parts)
+
             for word_parts in words_parts:
-                allwordchars.append(charCount)
-                charCount=0
+
                 for part in word_parts:
+
                     index+=1
                     chars=char_segmentation(part[0],part[1],pen,baseline,index)
                     charCount=charCount+len(chars)
                     linechars = linechars+len(chars)
+                    allwordspartslens.append(len(chars))
                     for char in chars:
                         all_chars.append(char[0])
+                allwordchars.append((charCount))
+                charCount=0
+
+
+
 # pattern stage
-combine_text(allwordchars,all_chars,alllines)
+combine_text(allwordchars,all_chars,alllines,allwordsparts,allwordspartslens)
 
 
 

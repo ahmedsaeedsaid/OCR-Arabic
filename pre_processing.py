@@ -72,7 +72,7 @@ def pre_processing(image_path):
 
     #image = remove_watermark(image)
 
-    #rotated=rotate_image(image)
+    #rotated = rotate_image(image)
 
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
