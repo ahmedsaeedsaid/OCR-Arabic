@@ -1,18 +1,66 @@
-import os
-from pre_processing import *
-import pandas as pd
-directory_list = list()
-Y=[]
-X=[]
-for root, dirs, files in os.walk("punctuation marks", topdown=False):
+from AOCR import *
+#loaded_model=load_model('models/NN_Model.h5')
+temp=0
+all_chars = []
+charCount=0
+allwordchars=[]
+alllines=[]
+linechars=0
+allwordsparts=[]
+allwordspartslens=[]
+index=0
+img_clean=pre_processing ('test_image/test_23.jpg')
+# preprocessing stage
 
-    for dir_name in dirs:
-        url='punctuation marks/'+dir_name+'/'
-        for file_name in os.listdir(url):
-            Y.append(dir_name)
-            X.append('dataset/'+dir_name+'/'+file_name)
+pages_split=page_segmentation(img_clean)
 
-dic={'class':Y,'image':X}
-df=pd.DataFrame.from_dict(dic)
-df.to_csv('arabic_punctuation.csv', index=False)
 
+# segmentation stage
+words_parts=[]
+for page in pages_split :
+    columns=column_segmentation(page)
+    for column in columns :
+        lines=line_segmentation(column)
+
+
+
+        for line in lines :
+            alllines.append(linechars)
+            linechars=0
+            words,baseline=word_segmentation(line)
+
+
+            for word in words :
+
+                word_parts=sub_word_segmentation(word[0],word[1])
+                words_parts.append(word_parts)
+                allwordsparts.append(len(word_parts))
+
+            pen=mean_pens(words_parts)
+
+
+            for word_parts in words_parts:
+
+                for part in word_parts:
+
+                    index+=1
+                    chars=char_segmentation(part[0],part[1],pen,baseline,index)
+                    charCount=charCount+len(chars)
+                    linechars = linechars+len(chars)
+                    allwordspartslens.append(len(chars))
+                    for char in chars:
+                        all_chars.append(char[0])
+                allwordchars.append((charCount))
+                charCount=0
+            words_parts=[]
+
+
+i=0
+for char in all_chars :
+    cv2.imwrite('result_image/char_'+str(i)+'.jpg',char)
+    i+=1
+'''
+# pattern stage
+text = combine_text(allwordchars,all_chars,alllines,allwordsparts,allwordspartslens,loaded_model)
+print(text)
+'''

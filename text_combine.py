@@ -1,8 +1,7 @@
 from segmentation import *
 from keras.models import load_model
 
-def combine_text(allwordchars,chars,alllines,allwordsparts,allwordspartslens):
-    loaded_model=load_model('models/NN_Model.h5')
+def combine_text(allwordchars,chars,alllines,allwordsparts,allwordspartslens,loaded_model):
     real_chars=["ع","ح","ا","ب","ض","د","ف","غ","ه","ء","ئ","ج","ك","خ","ل","لا","م","ن","ق","ر","ص","ش","س","ت","ة","ط","ث","و","ي","ظ","ذ","ز"]
     text = ""
     char_resized = []
@@ -54,4 +53,4 @@ def combine_text(allwordchars,chars,alllines,allwordsparts,allwordspartslens):
         f2=1
 
     text1 = text1+ text
-    print(text1)
+    return text1
