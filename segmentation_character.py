@@ -93,29 +93,33 @@ def up_contour(img_contour,contour,pen):
 
 def crop_two_point(image,start_point,end_point):
     result=np.zeros(image.shape)
-    result[start_point[0],start_point[1]]=255
-    point_counter=start_point
-    visited=[start_point]
-    counter_invert_dir=1
-    while (point_counter!=end_point):
-        all_pos_points=points_clockwise_diraction(point_counter)
-        flag=False
+    try:
+        result[start_point[0],start_point[1]]=255
+        point_counter=start_point
+        visited=[start_point]
+        counter_invert_dir=1
+        while (point_counter!=end_point):
+            all_pos_points=points_clockwise_diraction(point_counter)
+            flag=False
 
-        for point in all_pos_points:
-                if image.item(point[0],point[1])==255 and not (point in visited):
-                    result[point[0],point[1]]=255
-                    point_counter=point
-                    flag=True
-                    visited.append(point)
-                    break
-        if not flag:
-            result[point_counter[0],point_counter[1]]=0
-            point_counter=visited[len(visited)-counter_invert_dir]
-            counter_invert_dir+=1
-        else:
-            counter_invert_dir=1
+            for point in all_pos_points:
+                    if image.item(point[0],point[1])==255 and not (point in visited):
+                        result[point[0],point[1]]=255
+                        point_counter=point
+                        flag=True
+                        visited.append(point)
+                        break
+            if not flag:
+                result[point_counter[0],point_counter[1]]=0
+                point_counter=visited[len(visited)-counter_invert_dir]
+                counter_invert_dir+=1
+            else:
+                counter_invert_dir=1
 
-    return result
+
+        return result
+    except:
+        return []
 
 def seperated_region_area(image,start_point,end_point):
 
@@ -212,7 +216,7 @@ def seperated_region_area(image,start_point,end_point):
         chars.append((char,prev_region[1],end_point))
     return (chars,baseline)
 
-def cut_original_sub_word(image,upgrade_image,contour_image,chars):
+def cut_original_sub_word(image,upgrade_image,contour_image,chars,up_contour_image):
 
     clear_chars=[]
     chars_dir=[]
@@ -231,6 +235,7 @@ def cut_original_sub_word(image,upgrade_image,contour_image,chars):
 
 
         if k ==0:
+
             contour_char[:,end_point[1]:]=contour_image[:,end_point[1]:]
             # add boundry Y
 
@@ -273,11 +278,13 @@ def cut_original_sub_word(image,upgrade_image,contour_image,chars):
                     break
             # add down counter for char
             temp_contour_image=contour_image.copy()
-
+            temp_contour_image,_=filtering_diacritics(temp_contour_image,up_contour_image)
             down_contour=crop_two_point(temp_contour_image,end_point_down,start_point_down)
+            if (len(down_contour)==0):
+                contour_char= np.copy(contour_image)
 
-            marge_two_image(contour_char,down_contour)
-
+            else:
+                marge_two_image(contour_char,down_contour)
         # full holes in counter
         binary_image=np.array([[1 if pixel == 255 else 0 for pixel in row ] for row in contour_char])
         binary_image= ndimage.binary_fill_holes(binary_image).astype(int)
@@ -295,7 +302,8 @@ def cut_original_sub_word(image,upgrade_image,contour_image,chars):
                 for i in np.arange(upgrade_image.shape[0]):
                     if upgrade_image.item(i,j)==255 and binary_image.item(i,j)==1 :
                        clear_char[i,j]=255
-
+        if (calculate_number_white_pixels(clear_char)==0):
+            return [(image,upgrade_image)]
         clear_chars.append(clear_char)
         chars_dir.append(np.copy(clear_char))
 
@@ -341,7 +349,7 @@ def cut_original_sub_word(image,upgrade_image,contour_image,chars):
 def formation_char_data(output_chars,chars):
 
     formation_chars=[]
-    for i in range(len(chars)):
+    for i in range(len(output_chars)):
         formation_chars.append(Char(chars[i][0],output_chars[i][1],output_chars[i][0],chars[i][1],chars[i][2],False))
     return formation_chars
 
@@ -458,7 +466,7 @@ def calculate_part_height(upgrade_char,x1,x2,index,baseline,pen,size):
                     start=i
                 else:
                     end=i
-    if (end-start)>=pen*4:
+    if (end-start)>=pen*5:
         return pen*3
     else:
         return baseline -start-1
@@ -492,10 +500,31 @@ def check_sheen(part1,part2,pen,index,baseline,size):
 
             if len(Separation_indices)>0:
                 separated_regions=separate_regions(Separation_indices,1)
+
                 if len(separated_regions)==1:
+
                     return True
 
     return False
+
+def check_part_of_kaf(char,upgrade_char,x1,x2,pen,index,baseline,size):
+
+    start=-1
+    start_col=-1
+    end = -1
+    for i in np.arange(upgrade_char.shape[0]):
+        for j in np.arange(upgrade_char.shape[1]):
+
+            if upgrade_char.item(i,j) == 255:
+                if start==-1:
+                    start=i
+                    start_col=j
+                else:
+                    end=i
+    if (end-start)<pen*5 and (baseline -start-1)>(pen*2) and start_col<((upgrade_char.shape[0]/100)*35):
+        return True
+    else:
+        return False
 
 def overcheck_yaa(char,upgrade_char,baseline,pen):
     upgrade_img = increase_shape(upgrade_char,2)

@@ -45,7 +45,7 @@ def aocr(url,loaded_model):
                             all_chars.append(char[0])
                     allwordchars.append((charCount))
                     charCount=0
-
+                words_parts=[]
 
     i=0
     for char in all_chars :

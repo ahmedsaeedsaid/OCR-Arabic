@@ -26,7 +26,7 @@ def combine_text(allwordchars,chars,alllines,allwordsparts,allwordspartslens,loa
             if l != len(alllines)-1:
                 l=l+1
             if v!=0:
-                text = "\n" + text
+                text = text + "\n"
             v=0
         if allwordchars[y]==z :
              if y != 0:

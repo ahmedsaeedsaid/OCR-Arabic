@@ -7,9 +7,760 @@
     <list default="true" id="2818c6e4-6020-4f8a-9f29-e2ebb6c695fd" name="Default" comment="Edit remove underline">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/AOCR.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/pre_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AOCR.py" beforeDir="false" afterPath="$PROJECT_DIR$/AOCR.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_30 size58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_30 size59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_30 size94.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_30 size95.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_37 size61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_37 size62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_37 size89.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_37 size90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_38 size61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_38 size62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_38 size88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_38 size89.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_39 size83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_39 size84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_39 size85.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iAndalus_39 size86.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_12 size115.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_12 size44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_12 size45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_12 size46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_13 size105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_13 size106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_13 size107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_13 size108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_14 size91.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_14 size92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_14 size93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_14 size94.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_15 size80.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_15 size81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_15 size82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_15 size83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_16 size70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_16 size71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_16 size72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_16 size73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_17 size60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_17 size61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_17 size62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_17 size63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_18 size104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_18 size55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_18 size56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_18 size57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_19 size95.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_19 size96.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_19 size97.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_19 size98.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_20 size84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_20 size85.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_20 size86.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_20 size87.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_21 size76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_21 size77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_21 size78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_21 size79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_22 size69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_22 size70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_22 size71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_22 size72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_23 size63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_23 size64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_23 size65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_23 size66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_24 size60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_24 size61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_24 size62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_24 size63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_25 size89.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_25 size90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_25 size91.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_25 size92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_26 size81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_26 size82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_26 size83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_26 size84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_27 size74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_27 size75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_27 size76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_27 size77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_28 size68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_28 size69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_28 size70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_28 size71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_29 size66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_29 size67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_29 size68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_29 size69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_30 size62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_30 size63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_30 size64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_30 size92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_31 size84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_31 size85.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_31 size86.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_31 size87.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_32 size83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_32 size84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_32 size85.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_32 size86.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_33 size67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_33 size68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_33 size69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_33 size70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_34 size65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_34 size66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_34 size67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_34 size68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_35 size67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_35 size68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_35 size69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_35 size70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_36 size55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_36 size56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_36 size78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_36 size79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_37 size54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_37 size76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_37 size77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_37 size78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_38 size75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_38 size76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_38 size77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_38 size78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_39 size71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_39 size72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_39 size73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_39 size74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_40 size69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_40 size70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_40 size71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iArial_40 size72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_12 size64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_12 size65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_12 size66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_12 size67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_13 size52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_13 size53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_13 size54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_13 size55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_14 size43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_14 size44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_14 size45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_14 size46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_15 size104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_15 size105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_15 size106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_15 size107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_16 size95.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_16 size96.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_16 size97.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_16 size98.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_17 size82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_17 size83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_17 size84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_17 size85.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_18 size73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_18 size74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_18 size75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_18 size76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_19 size65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_19 size66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_19 size67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_19 size68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_20 size59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_20 size60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_20 size61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_20 size62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_21 size103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_21 size104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_21 size54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_21 size55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_22 size95.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_22 size96.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_22 size97.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_22 size98.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_23 size88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_23 size89.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_23 size90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_23 size91.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_24 size82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_24 size83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_24 size84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_24 size85.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_25 size74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_25 size75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_25 size76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_25 size77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_26 size66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_26 size67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_26 size68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_26 size69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_27 size63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_27 size64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_27 size65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_27 size66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_28 size60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_28 size61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_28 size62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_28 size63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_29 size90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_29 size91.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_29 size92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_29 size93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_30 size85.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_30 size86.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_30 size87.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_30 size88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_31 size78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_31 size79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_31 size80.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_31 size81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_32 size73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_32 size74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_32 size75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_32 size76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_33 size68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_33 size69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_33 size70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_33 size71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_34 size66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_34 size67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_34 size68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_34 size69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_35 size61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_35 size88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_35 size89.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_35 size90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_36 size84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_36 size85.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_36 size86.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_36 size87.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_37 size81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_37 size82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_37 size83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_37 size84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_38 size79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_38 size80.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_38 size81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_38 size82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_39 size74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_39 size75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_39 size76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_39 size77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_40 size68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_40 size69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_40 size70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/iCalibri_40 size71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z100Typesetting_12 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z100Typesetting_19 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z100iAndalus_23 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z101Typesetting_12 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z102Typesetting_12 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z104iAndalus_16 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z105iAndalus_16 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z106iAndalus_16 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z107Typesetting_18 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z107iAndalus_16 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z108Typesetting_18 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z109Typesetting_18 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z110Typesetting_18 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z42iAndalus_15 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z43Typesetting_17 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z43iAndalus_15 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z44Typesetting_17 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z44iAndalus_15 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z45Typesetting_17 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z45iAndalus_15 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z46Typesetting_17 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z49iAndalus_14 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z50iAndalus_14 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z51Typesetting_16 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z51iAndalus_14 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z52Typesetting_16 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z52iAndalus_14 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z53Typesetting_16 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z53iAndalus_23 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z54Typesetting_16 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z54Unicode_16 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z54iAndalus_22 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z55iAndalus_22 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z56Typesetting_25 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z56Typesetting_26 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z56iAndalus_22 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z57Typesetting_15 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z57Typesetting_25 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z57Typesetting_26 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z57Unicode_15 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z57iAndalus_22 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z58Typesetting_15 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z58Typesetting_25 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z58Typesetting_26 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z58Typesetting_35 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z58Unicode_15 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z59Typesetting_15 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z59Typesetting_25 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z59Typesetting_26 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z59Typesetting_34 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z59Unicode_15 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z59Unicode_21 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z59iAndalus_21 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z60Typesetting_15 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z60Typesetting_34 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z60Unicode_15 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z60Unicode_21 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z60iAndalus_21 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z61Typesetting_34 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z61iAndalus_21 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z61iAndalus_29 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z62Typesetting_24 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z62Unicode_20 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z62Unicode_26 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z62iAndalus_21 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z62iAndalus_29 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z63Typesetting_24 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z63Unicode_20 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z63Unicode_26 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z63iAndalus_29 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z64Typesetting_24 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z64Typesetting_33 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z64Unicode_20 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z64iAndalus_29 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z64iAndalus_36 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z65Typesetting_24 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z65Typesetting_33 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z65Unicode_20 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z65iAndalus_36 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z66Typesetting_32 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z66Typesetting_33 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z66iAndalus_28 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z66iAndalus_36 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z67Typesetting_32 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z67Typesetting_33 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z67iAndalus_28 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z67iAndalus_35 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z67iAndalus_36 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z68Typesetting_23 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z68Typesetting_32 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z68Typesetting_40 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z68iAndalus_20 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z68iAndalus_28 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z68iAndalus_35 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z69Typesetting_23 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z69Typesetting_32 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z69Typesetting_40 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z69iAndalus_20 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z69iAndalus_27 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z69iAndalus_28 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z69iAndalus_35 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z70Typesetting_23 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z70Typesetting_40 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z70Unicode_19 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z70Unicode_25 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z70iAndalus_20 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z70iAndalus_27 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z70iAndalus_35 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z71Typesetting_22 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z71Typesetting_23 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z71Typesetting_31 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z71Typesetting_39 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z71Typesetting_40 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z71Unicode_19 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z71Unicode_25 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z71Unicode_30 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z71iAndalus_20 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z71iAndalus_27 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z72Typesetting_22 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z72Typesetting_31 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z72Typesetting_39 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z72Unicode_19 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z72Unicode_24 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z72Unicode_25 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z72Unicode_30 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z72iAndalus_27 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z73Typesetting_22 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z73Typesetting_31 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z73Typesetting_39 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z73Unicode_19 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z73Unicode_24 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z73Unicode_25 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z73Unicode_29 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z73Unicode_30 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z73iAndalus_19 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z74Typesetting_22 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z74Typesetting_31 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z74Typesetting_39 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z74Unicode_24 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z74Unicode_29 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z74Unicode_30 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z74iAndalus_19 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z74iAndalus_26 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z75Typesetting_30 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z75Unicode_24 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z75Unicode_29 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z75iAndalus_19 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z75iAndalus_26 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z75iAndalus_34 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z76Typesetting_30 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z76Typesetting_38 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z76Unicode_29 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z76iAndalus_19 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z76iAndalus_26 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z76iAndalus_33 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z76iAndalus_34 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z77Typesetting_30 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z77Typesetting_38 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z77Unicode_18 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z77Unicode_23 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z77iAndalus_26 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z77iAndalus_33 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z77iAndalus_34 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z78Typesetting_13 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z78Typesetting_30 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z78Typesetting_38 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z78Unicode_13 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z78Unicode_18 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z78Unicode_23 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z78Unicode_28 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z78iAndalus_33 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z78iAndalus_34 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z79Typesetting_13 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z79Typesetting_29 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z79Typesetting_38 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z79Unicode_13 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z79Unicode_18 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z79Unicode_23 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z79Unicode_28 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z79iAndalus_33 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z80Typesetting_13 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z80Typesetting_21 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z80Typesetting_29 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z80Unicode_13 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z80Unicode_18 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z80Unicode_23 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z80Unicode_27 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z80Unicode_28 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z81Typesetting_13 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z81Typesetting_21 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z81Typesetting_29 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z81Unicode_13 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z81Unicode_27 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z81Unicode_28 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z81iAndalus_25 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z82Typesetting_21 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z82Typesetting_29 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z82Unicode_27 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z82iAndalus_25 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z83Typesetting_21 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z83Typesetting_36 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z83Typesetting_37 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z83Unicode_27 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z83iAndalus_18 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z83iAndalus_25 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z83iAndalus_32 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z84Typesetting_36 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z84Typesetting_37 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z84Unicode_22 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z84iAndalus_18 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z84iAndalus_25 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z84iAndalus_32 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z85Typesetting_28 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z85Typesetting_36 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z85Typesetting_37 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z85Unicode_22 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z85iAndalus_18 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z85iAndalus_32 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z86Typesetting_28 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z86Typesetting_36 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z86Typesetting_37 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z86Unicode_14 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z86Unicode_17 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z86Unicode_22 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z86iAndalus_18 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z86iAndalus_32 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z87Typesetting_28 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z87Unicode_14 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z87Unicode_17 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z87Unicode_22 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z87iAndalus_24 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z88Typesetting_28 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z88Unicode_14 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z88Unicode_17 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z88iAndalus_24 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z89Typesetting_20 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z89Unicode_14 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z89Unicode_17 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z89Unicode_26 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z89iAndalus_24 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z89iAndalus_31 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z90Typesetting_20 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z90Unicode_26 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z90iAndalus_24 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z90iAndalus_31 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z91Typesetting_20 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z91iAndalus_17 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z91iAndalus_31 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z92Typesetting_20 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z92Typesetting_35 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z92iAndalus_17 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z92iAndalus_31 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z93Typesetting_27 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z93Typesetting_35 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z93Unicode_21 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z93iAndalus_17 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z94Typesetting_27 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z94Typesetting_35 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z94Unicode_21 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z94iAndalus_17 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z95Typesetting_27 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z96Typesetting_27 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z97Typesetting_19 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z97Typesetting_34 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z97Unicode_16 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z98Typesetting_19 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z98Unicode_16 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z98iAndalus_23 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z99Typesetting_12 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z99Typesetting_19 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z99Unicode_16 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ghayn/z99iAndalus_23 size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/Result_image_clean.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/Result_image_clean.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_100.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_100.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_101.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_101.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_102.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_102.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_103.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_103.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_104.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_104.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_105.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_105.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_106.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_106.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_107.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_107.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_108.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_108.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_109.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_109.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_110.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_110.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_111.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_111.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_112.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_112.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_113.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_113.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_114.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_114.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_115.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_115.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_116.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_116.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_117.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_117.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_118.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_118.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_119.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_119.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_120.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_120.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_121.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_121.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_122.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_122.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_123.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_123.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_124.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_124.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_125.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_125.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_126.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_126.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_127.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_127.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_128.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_128.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_129.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_129.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_130.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_130.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_131.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_131.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_132.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_132.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_133.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_133.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_134.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_134.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_135.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_135.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_136.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_136.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_137.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_137.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_138.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_138.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_139.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_139.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_140.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_140.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_141.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_141.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_142.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_142.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_143.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_143.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_144.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_144.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_145.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_145.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_146.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_146.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_147.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_147.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_148.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_148.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_149.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_149.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_150.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_151.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_151.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_152.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_152.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_153.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_153.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_154.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_154.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_155.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_155.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_156.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_156.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_157.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_157.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_158.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_158.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_159.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_159.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_160.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_160.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_161.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_161.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_162.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_162.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_163.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_163.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_164.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_164.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_165.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_165.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_166.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_166.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_167.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_167.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_168.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_168.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_169.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_169.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_170.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_170.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_171.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_171.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_172.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_172.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_173.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_173.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_174.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_174.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_175.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_175.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_176.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_176.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_177.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_177.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_178.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_178.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_179.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_179.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_180.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_180.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_181.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_181.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_182.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_182.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_183.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_183.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_184.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_184.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_185.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_185.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_186.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_186.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_187.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_187.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_188.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_188.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_189.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_189.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_190.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_190.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_191.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_191.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_192.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_192.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_193.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_193.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_194.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_194.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_195.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_195.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_196.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_196.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_197.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_197.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_198.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_198.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_199.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_199.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_200.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_201.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_201.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_202.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_202.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_203.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_203.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_204.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_204.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_205.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_205.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_206.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_206.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_207.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_207.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_208.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_208.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_209.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_210.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_211.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_213.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_214.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_215.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_216.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_217.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_218.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_219.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_220.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_221.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_222.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_223.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_52.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_52.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_53.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_54.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_54.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_55.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_55.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_56.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_56.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_57.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_57.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_58.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_58.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_59.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_59.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_60.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_61.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_61.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_62.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_62.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_63.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_63.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_64.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_65.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_65.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_66.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_66.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_67.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_67.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_68.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_68.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_69.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_69.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_70.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_70.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_71.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_71.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_72.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_72.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_73.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_73.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_74.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_74.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_75.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_75.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_76.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_76.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_77.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_77.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_78.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_78.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_79.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_79.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_80.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_80.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_81.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_81.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_82.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_82.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_83.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_83.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_84.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_84.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_85.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_85.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_86.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_86.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_87.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_87.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_88.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_88.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_89.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_89.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_90.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_90.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_91.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_91.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_92.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_92.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_93.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_93.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_94.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_94.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_95.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_95.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_96.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_96.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_97.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_97.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_98.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_98.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image/char_99.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image/char_99.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_keras_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_keras_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/segmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/segmentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/segmentation_character.py" beforeDir="false" afterPath="$PROJECT_DIR$/segmentation_character.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/temp_picture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/temp/temp_picture.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_image/Untitled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_image/test_15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/test_image/test_15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_image/test_23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/test_image/test_23.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text_combine.py" beforeDir="false" afterPath="$PROJECT_DIR$/text_combine.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +771,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AOCR.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="972">
+              <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="61" column="3" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="3" />
+            <state relative-caret-position="198">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_keras_server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+              <folding>
+                <element signature="e#1#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/segmentation_character.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="218" column="84" selection-start-line="218" selection-start-column="84" selection-end-line="218" selection-end-column="84" />
+              <folding>
+                <element signature="e#54#338#0" />
+                <element signature="e#374#1345#0" />
+                <element signature="e#3012#3965#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/segmentation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1890">
+              <caret line="258" selection-start-line="258" selection-end-line="258" />
+              <folding>
+                <element signature="e#71#708#0" />
+                <element signature="e#745#2232#0" />
+                <element signature="e#2268#3617#0" />
+                <element signature="e#3652#4903#0" />
+                <element signature="e#4970#5740#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,8 +834,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text_combine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="35" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="35" />
+            <state relative-caret-position="972">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -42,33 +844,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/segmentation_filtering.py">
+        <entry file="file://$PROJECT_DIR$/segmentation_algorithms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="153" selection-start-line="153" selection-end-line="153" />
+            <state relative-caret-position="540">
+              <caret line="156" column="33" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="33" />
               <folding>
-                <element signature="e#70#1017#0" />
-                <element signature="e#1050#1597#0" />
-                <element signature="e#1643#3677#0" />
-                <element signature="e#3726#4053#0" />
-                <element signature="e#4102#4321#0" />
-                <element signature="e#4358#5315#0" />
+                <element signature="e#84#379#0" />
+                <element signature="e#415#642#0" />
+                <element signature="e#680#908#0" />
+                <element signature="e#944#1035#0" />
+                <element signature="e#1093#1633#0" />
+                <element signature="e#1673#1982#0" />
+                <element signature="e#2011#2424#0" />
+                <element signature="e#2474#2768#0" />
+                <element signature="e#2794#3408#0" />
+                <element signature="e#3453#3796#0" />
+                <element signature="e#3833#4065#0" />
+                <element signature="e#4107#4258#0" />
+                <element signature="e#4286#4447#0" />
+                <element signature="e#4484#4694#0" />
+                <element signature="e#4742#4908#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pre_processing.py">
+        <entry file="file://$PROJECT_DIR$/segmentation_filtering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+            <state relative-caret-position="1116">
+              <caret line="102" selection-start-line="102" selection-end-line="102" />
               <folding>
-                <element signature="e#30#40#0" expanded="true" />
-                <element signature="e#91#1307#0" />
-                <element signature="e#1363#1756#0" />
-                <element signature="e#1786#1894#0" />
-                <element signature="e#1933#3215#0" />
+                <element signature="e#70#1017#0" />
+                <element signature="e#1050#1597#0" />
+                <element signature="e#3726#4053#0" />
+                <element signature="e#4102#4321#0" />
+                <element signature="e#4358#5315#0" />
               </folding>
             </state>
           </provider>
@@ -85,9 +896,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>chars</find>
-      <find>de</find>
-      <find>sc</find>
       <find>alllines</find>
       <find>x</find>
       <find>charr</find>
@@ -96,7 +904,6 @@
       <find>loaded_model</find>
       <find>column_end</find>
       <find>char</find>
-      <find>crop_two_point</find>
       <find>all_chars</find>
       <find>end_poin</find>
       <find>rects</find>
@@ -106,15 +913,19 @@
       <find>linechars</find>
       <find>determination_image</find>
       <find>cv2.</find>
-      <find>cv2.im</find>
       <find>cut_original_sub_word</find>
-      <find>print</find>
       <find>resizeimage</find>
       <find>image_path</find>
       <find>rotated</find>
       <find>angle</find>
       <find>ndimage</find>
+      <find>number_of_sub_words</find>
+      <find>parts</find>
       <find>words_parts</find>
+      <find>marge_two_image</find>
+      <find>crop_two_point</find>
+      <find>print</find>
+      <find>cv2.im</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,19 +953,19 @@
         <option value="$PROJECT_DIR$/load_NN.py" />
         <option value="$PROJECT_DIR$/test_NN_model.py" />
         <option value="$PROJECT_DIR$/segmentation_algorithms.py" />
-        <option value="$PROJECT_DIR$/segmentation_filtering.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/pre_processing.py" />
         <option value="$PROJECT_DIR$/segmentation_character.py" />
         <option value="$PROJECT_DIR$/segmentation.py" />
-        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/segmentation_filtering.py" />
         <option value="$PROJECT_DIR$/AOCR.py" />
         <option value="$PROJECT_DIR$/run_keras_server.py" />
         <option value="$PROJECT_DIR$/text_combine.py" />
-        <option value="$PROJECT_DIR$/pre_processing.py" />
-        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="617" />
     <option name="width" value="758" />
     <option name="height" value="728" />
@@ -164,7 +975,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,11 +986,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/xampp/htdocs/web-assistant/optimalBot" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -195,7 +1006,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.run_keras_server">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="OCR Arabic" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -303,15 +1114,15 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.test_NN_model" />
-      <item itemvalue="Python.text_combine" />
       <item itemvalue="Python.run_keras_server" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.test_NN_model" />
+      <item itemvalue="Python.text_combine" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.run_keras_server" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.text_combine" />
         <item itemvalue="Python.test_NN_model" />
@@ -322,14 +1133,13 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2909226" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2909226" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29081634" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925596" weight="0.25510204" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -338,7 +1148,7 @@
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32881355" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50074404" side_tool="true" weight="0.25510204" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -367,16 +1177,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Edit remove underline" />
     <option name="LAST_COMMIT_MESSAGE" value="Edit remove underline" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/detect_peaks.py" />
@@ -455,13 +1255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/segmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6246">
-          <caret line="347" column="27" selection-start-line="347" selection-start-column="27" selection-end-line="347" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Anaconda3/Lib/site-packages/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -473,100 +1266,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/segmentation_filtering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="153" selection-start-line="153" selection-end-line="153" />
-          <folding>
-            <element signature="e#70#1017#0" />
-            <element signature="e#1050#1597#0" />
-            <element signature="e#1643#3677#0" />
-            <element signature="e#3726#4053#0" />
-            <element signature="e#4102#4321#0" />
-            <element signature="e#4358#5315#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/segmentation_algorithms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="28" />
-          <folding>
-            <element signature="e#84#379#0" />
-            <element signature="e#415#642#0" />
-            <element signature="e#680#908#0" />
-            <element signature="e#944#1035#0" />
-            <element signature="e#1093#1633#0" />
-            <element signature="e#1673#1982#0" />
-            <element signature="e#2011#2424#0" />
-            <element signature="e#2474#2768#0" />
-            <element signature="e#3453#3796#0" />
-            <element signature="e#3833#4065#0" />
-            <element signature="e#4107#4258#0" />
-            <element signature="e#4286#4447#0" />
-            <element signature="e#4484#4694#0" />
-            <element signature="e#4742#4908#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text_combine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AOCR.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="54" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_keras_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="45" />
-          <folding>
-            <element signature="e#1#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/segmentation_character.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="e#54#338#0" />
-            <element signature="e#374#1345#0" />
-            <element signature="e#1393#2957#0" />
-            <element signature="e#3012#3841#0" />
-            <element signature="e#3905#8636#0" />
-            <element signature="e#8711#13149#0" />
-            <element signature="e#13201#13396#0" />
-            <element signature="e#13432#13782#0" />
-            <element signature="e#13815#15262#0" />
-            <element signature="e#15291#15593#0" />
-            <element signature="e#15644#16356#0" />
-            <element signature="e#16398#17288#0" />
-            <element signature="e#17366#17794#0" />
-            <element signature="e#17875#18233#0" />
-            <element signature="e#18293#19424#0" />
-            <element signature="e#19481#20777#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pre_processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+        <state relative-caret-position="6">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#30#40#0" expanded="true" />
             <element signature="e#91#1307#0" />
@@ -577,10 +1280,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AOCR.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="61" column="3" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="3" />
+        <state relative-caret-position="198">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_keras_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding>
+            <element signature="e#1#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="258" selection-start-line="258" selection-end-line="258" />
+          <folding>
+            <element signature="e#71#708#0" />
+            <element signature="e#745#2232#0" />
+            <element signature="e#2268#3617#0" />
+            <element signature="e#3652#4903#0" />
+            <element signature="e#4970#5740#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text_combine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation_algorithms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="156" column="33" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="33" />
+          <folding>
+            <element signature="e#84#379#0" />
+            <element signature="e#415#642#0" />
+            <element signature="e#680#908#0" />
+            <element signature="e#944#1035#0" />
+            <element signature="e#1093#1633#0" />
+            <element signature="e#1673#1982#0" />
+            <element signature="e#2011#2424#0" />
+            <element signature="e#2474#2768#0" />
+            <element signature="e#2794#3408#0" />
+            <element signature="e#3453#3796#0" />
+            <element signature="e#3833#4065#0" />
+            <element signature="e#4107#4258#0" />
+            <element signature="e#4286#4447#0" />
+            <element signature="e#4484#4694#0" />
+            <element signature="e#4742#4908#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation_filtering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1116">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+          <folding>
+            <element signature="e#70#1017#0" />
+            <element signature="e#1050#1597#0" />
+            <element signature="e#3726#4053#0" />
+            <element signature="e#4102#4321#0" />
+            <element signature="e#4358#5315#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation_character.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="218" column="84" selection-start-line="218" selection-start-column="84" selection-end-line="218" selection-end-column="84" />
+          <folding>
+            <element signature="e#54#338#0" />
+            <element signature="e#374#1345#0" />
+            <element signature="e#3012#3965#0" />
+          </folding>
         </state>
       </provider>
     </entry>

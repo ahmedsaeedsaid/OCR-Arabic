@@ -1,5 +1,5 @@
 from AOCR import *
-#loaded_model=load_model('models/NN_Model.h5')
+loaded_model=load_model('models/NN_Model.h5')
 temp=0
 all_chars = []
 charCount=0
@@ -9,7 +9,7 @@ linechars=0
 allwordsparts=[]
 allwordspartslens=[]
 index=0
-img_clean=pre_processing ('test_image/test_23.jpg')
+img_clean=pre_processing ('test_image/test_15.jpg')
 # preprocessing stage
 
 pages_split=page_segmentation(img_clean)
@@ -37,10 +37,7 @@ for page in pages_split :
                 allwordsparts.append(len(word_parts))
 
             pen=mean_pens(words_parts)
-
-
             for word_parts in words_parts:
-
                 for part in word_parts:
 
                     index+=1
@@ -52,6 +49,7 @@ for page in pages_split :
                         all_chars.append(char[0])
                 allwordchars.append((charCount))
                 charCount=0
+
             words_parts=[]
 
 
@@ -59,8 +57,8 @@ i=0
 for char in all_chars :
     cv2.imwrite('result_image/char_'+str(i)+'.jpg',char)
     i+=1
-'''
+
 # pattern stage
 text = combine_text(allwordchars,all_chars,alllines,allwordsparts,allwordspartslens,loaded_model)
 print(text)
-'''
+

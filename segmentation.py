@@ -166,24 +166,33 @@ def word_segmentation_V2(img,threshold_word_segmentation) :
 def sub_word_segmentation(img,upgrade_img):
     number_of_sub_words, labels = cv2.connectedComponents(upgrade_img,connectivity=8)
     diacritics_img, found=filtering_diacritics(img,upgrade_img)
+
     parts=[]
     parts_dir=[]
     sub_words=[]
-
+    parts_not_valid=[]
     # create empty image to save sub-word without director and doted
     for i in range(1,number_of_sub_words):
+        part = filtering_component(upgrade_img,labels,i)
+        det_part=determination_image(part)
+        if (check_dotted(det_part)==1) and det_part.shape[0]<pen_size(upgrade_img)*3:
+            parts_not_valid.append(i)
+            marge_two_image(diacritics_img,upgrade_img)
+
+
         parts.append(np.zeros(upgrade_img.shape))
 
     # seperate sub-word in var 'parts' without director and doted and create diacritics image
     for i in np.arange(labels.shape[0]):
         for j in np.arange(labels.shape[1]):
             for k in range(1,number_of_sub_words):
-                if labels.item(i,j)==k:
+                if labels.item(i,j)==k and k not in parts_not_valid:
                     parts[k-1][i][j]=255
 
     # create image to save sub-word with director and doted
     for k in range(1,number_of_sub_words):
-        parts_dir.append(np.copy(parts[k-1]))
+
+            parts_dir.append(np.copy(parts[k-1]))
 
 
     # calculate rate for each diacritic
@@ -212,18 +221,19 @@ def sub_word_segmentation(img,upgrade_img):
     # add diacritics to parts
     for i in np.arange(labels_of_diacritics.shape[0]):
         for j in np.arange(labels_of_diacritics.shape[1]):
-            if labels_of_diacritics.item(i,j)!=0:
+            if labels_of_diacritics.item(i,j)!=0 :
                 parts_dir[diacrtics[labels_of_diacritics.item(i,j)-1]][i][j]=255
 
 
 
     # seperate sub-word in var 'parts_dir' with director and doted
     for i in range(1,number_of_sub_words):
-        V_proj=vertical_projection(parts_dir[i-1])
-        Separation_indices=separation_indices(V_proj)
-        if(len(Separation_indices)>0):
-            separated_regions=separate_regions(Separation_indices,1)
-            sub_words.append((parts_dir[i-1][:,separated_regions[0][0]:separated_regions[0][1]+2],parts[i-1][:,separated_regions[0][0]:separated_regions[0][1]+2]))
+        if i not in parts_not_valid:
+            V_proj=vertical_projection(parts_dir[i-1])
+            Separation_indices=separation_indices(V_proj)
+            if(len(Separation_indices)>0):
+                separated_regions=separate_regions(Separation_indices,1)
+                sub_words.append((parts_dir[i-1][:,separated_regions[0][0]:separated_regions[0][1]+2],parts[i-1][:,separated_regions[0][0]:separated_regions[0][1]+2]))
 
 
     return sub_words
@@ -231,7 +241,14 @@ def sub_word_segmentation(img,upgrade_img):
 def char_segmentation(img,upgrade_img,pen,baseline,index):
     img = increase_shape(img,2)
     upgrade_img = increase_shape(upgrade_img,2)
-    contour_image,contour = contour_extraction(upgrade_img)
+
+
+    try:
+        contour_image,contour = contour_extraction(upgrade_img)
+    except:
+        return [(determination_image(img),determination_image(img))]
+
+
     image,start_point,end_point = up_contour(contour_image,contour,pen+2)
     if len(image) == 0 :
 
@@ -240,8 +257,7 @@ def char_segmentation(img,upgrade_img,pen,baseline,index):
     up_contour_chars, _ = seperated_region_area(image,start_point,end_point)
 
 
-    output_chars = cut_original_sub_word(img,upgrade_img,contour_image,up_contour_chars)
-
+    output_chars = cut_original_sub_word(img,upgrade_img,contour_image,up_contour_chars,image)
 
     chars = formation_char_data(output_chars,up_contour_chars)
 
@@ -250,6 +266,7 @@ def char_segmentation(img,upgrade_img,pen,baseline,index):
 
     space_counter=0
     len_chars=len(chars)
+
     for i in range(len_chars):
 
 
@@ -265,7 +282,9 @@ def char_segmentation(img,upgrade_img,pen,baseline,index):
             space_counter=0
 
         elif character_satisfied(chars[i].char,chars[i].upgradeChar,chars[i].startPoint[0],chars[i].endPoint[0],pen,i,baseline,len_chars) and i!=len_chars-1:
+
             if i>=2 and check_sheen(chars[i-1],chars[i-2],pen,i,baseline,len_chars):
+
                 chars[i-1].ignore=True
                 chars[i-2].ignore=True
                 if i>2:
@@ -273,10 +292,12 @@ def char_segmentation(img,upgrade_img,pen,baseline,index):
                 space_counter=0
             else:
                 space_counter+=1
+
         else:
 
             if i == len_chars-1:
-                if chars[i].startPoint[0]>baseline+pen or character_satisfied(chars[i].char,chars[i].upgradeChar,chars[i].startPoint[0],chars[i].endPoint[0],pen,i,baseline,len_chars):
+
+                if chars[i].startPoint[0]>baseline+pen or character_satisfied(chars[i].char,chars[i].upgradeChar,chars[i].startPoint[0],chars[i].endPoint[0],pen,i,baseline,len_chars) or check_part_of_kaf(chars[i].char,chars[i].upgradeChar,chars[i].startPoint[0],chars[i].endPoint[0],pen,i,baseline,len_chars):
                     chars[i-1].ignore=True
                     if i>=3 and check_sheen(chars[i-2],chars[i-3],pen,i,baseline,len_chars):
                         chars[i-2].ignore=True
@@ -333,31 +354,34 @@ def char_segmentation(img,upgrade_img,pen,baseline,index):
                 if (i>2):
                     chars[i-(3+count)].ignore=False
                 space_counter=0
+
+
     chars[len_chars-1].ignore=False
     for i in range(len_chars-1):
         if chars[i].ignore:
+
             marge_two_image(chars[i+1].char,chars[i].char)
             marge_two_image(chars[i+1].upgradeChar,chars[i].upgradeChar)
 
     reChars=[]
     for i in range(len_chars):
-        countwhite= calculate_number_white_pixels(chars[i].upgradeChar)
-        size = chars[i].char.shape[0] * chars[i].char.shape[1]
-        if not chars[i].ignore and countwhite!=0 and size > 4:
+
+        if not chars[i].ignore :
+
             #overSeg_chars=overcheck_yaa(chars[i].char,chars[i].upgradeChar,baseline,pen)
             overSeg_chars=[]
-            if len(overSeg_chars)==0:
+            if len(overSeg_chars)==0  and not (len_chars>=2 and determination_image(chars[i].char).shape[1]==determination_image(img).shape[1]):
                 reChars.append((determination_image(chars[i].char),determination_image(chars[i].upgradeChar)))
                 continue
             else:
                 for overSeg_char in overSeg_chars:
                     countwhite= calculate_number_white_pixels(overSeg_char[1])
                     size = overSeg_char[0].shape[0] * overSeg_char[0].shape[1]
-                    if  countwhite!=0 and size > 4:
+
+                    if  countwhite!=0 and size > 4 and not (len_chars!=1 and overSeg_char[0].shape[0]==img.shape[0]):
                         reChars.append((determination_image(overSeg_char[0]),determination_image(overSeg_char[1])))
                 continue
     if len(reChars)==0:
         reChars.append((determination_image(img),determination_image(upgrade_img)))
+
     return reChars
-
-
