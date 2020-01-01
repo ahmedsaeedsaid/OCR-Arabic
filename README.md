@@ -1,1 +1,1 @@
-# OCR-A
+# OCR-Arabic
